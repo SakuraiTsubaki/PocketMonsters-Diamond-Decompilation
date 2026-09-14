@@ -26,8 +26,8 @@ Public dump catalogs distinguish an untagged Japanese retail build plus later `R
 | Reference only | France | French | Rev 5 | Nintendo DS; `NTR-ADAF-FRA`; 2007-07-27 | SHA-1 `e961e632ca6f72f81e19c5be3d93936772e8544a` | Hash currently comes from a secondary catalog mirror and must be rechecked against a stronger catalog source. Sources `D-SRC-0003`, `D-SRC-0010`, `D-SRC-0014`. |
 | Planned | Italy | Italian | Rev 5 reported | Nintendo DS; `NTR-ADAI-ITA`; 2007-07-27 | TBD | Rev 5 appears in public technical/revision databases; hash still to verify. Sources `D-SRC-0003`, `D-SRC-0006`, `D-SRC-0011`. |
 | Planned | South Korea | Korean | unknown | Nintendo DS; `NTR-ADAK-KOR`; 2008-02-14 | TBD | Korean-localized retail release is documented; revision/hash still to identify. Sources `D-SRC-0003`, `D-SRC-0012`, `D-SRC-0013`. |
-| Planned | Taiwan | TBD | unresolved | Reported availability/distribution 2006-09-28; dedicated build not established | TBD | Secondary sources report Taiwan availability, but a distinct Taiwan binary/product code is not established in the current evidence set. Determine whether the Japanese build was distributed there. |
-| Planned | Hong Kong | TBD | unresolved | No dedicated retail build established in the current evidence set | TBD | Keep open until official and local archival evidence is exhausted. Do not infer nonexistence from present absence of evidence. |
+| Reference only | Taiwan distribution | Japanese | dedicated build unresolved | Locally distributed/supported Japanese product reported from 2006-09-28; distributor 博優 | TBD | Contemporary Taiwan evidence records local sale/distribution and distributor support, while some specialist wikis label Taiwan “not released.” No distinct Taiwan-language/product-code binary has been established. Treat **regional distribution** and **dedicated/localized build** as separate questions. Sources `D-SRC-0017`–`D-SRC-0020`. |
+| Planned | Hong Kong | TBD | unresolved | No dedicated retail build or contemporary distribution record established in the current evidence set | TBD | Keep open until official and local archival evidence is exhausted. Do not infer nonexistence from present absence of evidence. Sources `D-SRC-0019`, `D-SRC-0020`. |
 
 ## Non-retail and development references
 
@@ -37,11 +37,12 @@ These are intentionally separated from the retail lineage.
 - A USA Diamond/Pearl kiosk demo is separately identified by public technical databases. Its exact identity and hashes still require verification.
 - Official recovery/service utilities and event/distribution software are tracked separately from retail game revisions.
 
-## Known revision implications
+## Known revision and distribution implications
 
 - Japan `Rev 6` is not treated as merely a filename label: public RAM/code research uses different address bases than the Japan `Rev 0-5` grouping for multiple systems. The exact binary changes still need to be mapped.
 - PRET's current Diamond matching target is the USA SHA-1 listed above. Public catalog metadata identifies that hash as `Rev 5`; PRET therefore provides a major source-reconstruction reference for the USA branch, not direct proof of the Japanese-baseline binary.
 - A shared product code or release date does **not** establish byte identity. Regional packaging records and binary identities remain separate questions.
+- A territory can have official or authorized local distribution/support without having a distinct localized binary. Taiwan is tracked with separate fields for distribution evidence and dedicated-build evidence for exactly this reason.
 
 ## Status vocabulary
 
@@ -61,3 +62,4 @@ These are intentionally separated from the retail lineage.
 5. Link version-specific findings to the relevant documentation or verification issue.
 6. Do not convert an external catalog's revision label into project fact without preserving its provenance.
 7. Keep retail, demo, development, distribution, and service/recovery software lineages distinct.
+8. Keep territory-level distribution/support separate from proof of a distinct binary or localization.
