@@ -21,7 +21,7 @@ The project assumes no local retail ROM access. Publicly documented identities a
 | Pokémon Versione Diamante | Italy | Italian | Rev 5 reported | Unverified | Product/release identity located; hash still TBD. |
 | Pokémon Diamond Version | Australia | English | unknown | Unverified | Product/release identity located; revision/hash still TBD. |
 | 포켓몬스터DP 디아루가 | South Korea | Korean | unknown | Unverified | Korean localization/release/product code established; revision/hash still TBD. |
-| Diamond regional distribution | Taiwan | TBD | unresolved | Unverified | Determine whether a distinct build existed or the Japanese build was distributed. |
+| Pocket Monsters Diamond local distribution | Taiwan | Japanese | dedicated build unresolved | Reference only | Contemporary local records establish 博優 distribution/support of D/P; no distinct Taiwan binary is established. Secondary sources conflict over whether to call this a Taiwan “release.” |
 | Diamond regional distribution | Hong Kong | TBD | unresolved | Unverified | No conclusion until official/local archival evidence is exhausted. |
 
 See `VERSIONS.md` for the authoritative detailed inventory and `SOURCE_REGISTRY.md` for provenance.
@@ -44,6 +44,7 @@ See `VERSIONS.md` for the authoritative detailed inventory and `SOURCE_REGISTRY.
 - PRET's Diamond source-reconstruction target is the USA hash that public preservation metadata labels Rev 5. It is a critical USA reference, but it is not the Japanese historical baseline.
 - English Europe is publicly catalogued as Rev 13, while German and several other continental-language releases are reported as Rev 5; each language/revision must therefore remain separate.
 - Korean localization and the `NTR-ADAK-KOR` product identity are established from contemporary press and retail metadata, but the Korean revision/hash remains unresolved.
+- Taiwan must be modeled as a **distribution question separate from a binary-localization question**: contemporary Taiwanese records show local Nintendo distributor 博優 selling/supporting D/P, while no distinct Taiwan-coded/localized Diamond build has yet been identified and some later wikis call Taiwan “not released.” The conflicting terminology is preserved in `SOURCE_REGISTRY.md` rather than collapsed.
 
 ## Validation levels
 
@@ -56,7 +57,7 @@ See `VERSIONS.md` for the authoritative detailed inventory and `SOURCE_REGISTRY.
 ## Next milestones
 
 1. Complete the Diamond retail version/revision inventory: Spain, France, Italy, Australia, Korea, and remaining English-European packaging/build evidence.
-2. Resolve Taiwan/Hong Kong distribution and dedicated-build questions from official/local archival sources.
+2. For Taiwan, determine the exact Japanese product/revision distributed by 博優; investigate Hong Kong separately from Taiwan.
 3. Catalogue non-retail Diamond references separately: kiosk demo, public beta/development labels, recovery/service utilities, and distribution/event software.
 4. Expand the Japanese revision history without inferring undocumented revisions from grouped cheat-code labels.
 5. Only after the retail lineage is sufficiently stable, begin Phase 1 executable/container mapping against the Japanese-origin baseline and regional branches.
