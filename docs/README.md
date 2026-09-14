@@ -9,6 +9,7 @@ This directory is the central documentation portal for the decompilation project
 | [Project Status](PROJECT_STATUS.md) | Current stage, target coverage, validation level, and next milestones |
 | [Roadmap](ROADMAP.md) | Recommended project phases from target definition through reproducible reconstruction |
 | [Version Coverage](VERSIONS.md) | Regions, languages, revisions, updates, builds, hashes, and support status |
+| [Diamond retail revision research](versions/diamond-retail-revision-research.md) | Detailed Japanese-baseline retail lineage, regional identities, revision-label conflicts, and unresolved hash/revision leads |
 | [Research Guide](RESEARCH_GUIDE.md) | Evidence, confidence, offsets, naming, and research-recording practices |
 | [Verification Guide](VERIFICATION.md) | Standards for Unverified, Observed, Reproduced, and Matched results |
 | [Repository Structure](REPOSITORY_STRUCTURE.md) | Intended long-term layout for source, data, assets, tools, tests, and manifests |
