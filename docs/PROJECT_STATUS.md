@@ -1,18 +1,34 @@
 # Project Status
 
-**Current stage:** Initial setup
+**Current stage:** Phase 0 — Target definition / public-source inventory (**in progress**)
 
 This document tracks decompilation progress, target-version coverage, validation level, and the next major milestones.
+
+The project assumes no local retail ROM access. Publicly documented identities and hashes therefore remain `Reference only` unless they satisfy the independent verification requirements in `VERIFICATION.md`.
 
 ## Version inventory
 
 | Target | Region | Language | Revision / update | Verification | Notes |
 | --- | --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | Unverified | Populate as research begins |
+| Pocket Monsters Diamond | Japan | Japanese | base / no revision tag | Reference only | Historical baseline; release 2006-09-28. Public SHA-1 recorded in `VERSIONS.md`. |
+| Pocket Monsters Diamond | Japan | Japanese | Rev 5 | Reference only | Distinct public catalog identity recorded. |
+| Pocket Monsters Diamond | Japan | Japanese | Rev 6 | Reference only | Distinct public identity; revision-specific RAM/code addresses differ from the public `Rev 0-5` grouping. |
+| Pokémon Diamond Version | United States | English | Rev 5 | Reference only | PRET matching target; public catalog SHA-1 agrees with PRET target. |
+| Pokémon Diamond Version | Europe | English | Rev 13 | Reference only | Public catalog identity recorded; packaging/build details need additional direct evidence. |
+| Pokémon Diamant-Edition | Germany | German | Rev 5 | Reference only | Public catalog identity recorded; official regional release page located. |
+| Pokémon Edición Diamante | Spain | Spanish | Rev 5 reported | Unverified | Product/release identity located; hash still TBD. |
+| Pokémon Version Diamant | France | French | Rev 5 reported | Reference only | Provisional secondary hash recorded; stronger corroboration required. |
+| Pokémon Versione Diamante | Italy | Italian | Rev 5 reported | Unverified | Product/release identity located; hash still TBD. |
+| Pokémon Diamond Version | Australia | English | unknown | Unverified | Product/release identity located; revision/hash still TBD. |
+| 포켓몬스터DP 디아루가 | South Korea | Korean | unknown | Unverified | Korean localization/release/product code established; revision/hash still TBD. |
+| Diamond regional distribution | Taiwan | TBD | unresolved | Unverified | Determine whether a distinct build existed or the Japanese build was distributed. |
+| Diamond regional distribution | Hong Kong | TBD | unresolved | Unverified | No conclusion until official/local archival evidence is exhausted. |
+
+See `VERSIONS.md` for the authoritative detailed inventory and `SOURCE_REGISTRY.md` for provenance.
 
 ## Progress
 
-- [ ] Establish authoritative version/revision inventory
+- [~] Establish authoritative version/revision inventory — **in progress**; Japanese baseline and several major regional/revision identities are now recorded.
 - [ ] Document executable and section layout
 - [ ] Map symbols, functions, and major subsystems
 - [ ] Document game-data formats and resource containers
@@ -21,18 +37,28 @@ This document tracks decompilation progress, target-version coverage, validation
 - [ ] Add reproducible extraction/repacking tooling
 - [ ] Add automated verification where practical
 
+## Phase 0 findings so far
+
+- The Japanese retail lineage cannot be represented as a single undifferentiated build: public preservation metadata distinguishes an untagged Japanese build, Rev 5, and Rev 6.
+- Public technical research uses different RAM/code address bases for Japan Rev 6 versus a Japan `Rev 0-5` grouping, establishing a meaningful revision distinction even though the exact binary delta is not yet mapped.
+- PRET's Diamond source-reconstruction target is the USA hash that public preservation metadata labels Rev 5. It is a critical USA reference, but it is not the Japanese historical baseline.
+- English Europe is publicly catalogued as Rev 13, while German and several other continental-language releases are reported as Rev 5; each language/revision must therefore remain separate.
+- Korean localization and the `NTR-ADAK-KOR` product identity are established from contemporary press and retail metadata, but the Korean revision/hash remains unresolved.
+
 ## Validation levels
 
 - **Unverified** — proposed or recorded but not independently checked.
-- **Observed** — confirmed directly in a target build or extracted data.
-- **Reproduced** — behavior or data can be recreated with documented steps.
-- **Matched** — reconstructed output is verified against the intended target.
+- **Observed** — confirmed directly in a specific target build, executable, extracted file, or runtime observation.
+- **Reproduced** — the observation can be recreated using documented steps, tooling, inputs, and target information.
+- **Matched** — reconstructed output is verified against the intended target using an explicit exact-match criterion.
+- **Reference only** — externally documented identity, hash, revision, or comparison target retained for research without claiming local project observation.
 
 ## Next milestones
 
-1. Identify and document supported target versions.
-2. Build an initial executable/data map.
-3. Select the first subsystem for source reconstruction.
-4. Record findings in `docs/` and verification evidence in issues or manifests.
+1. Complete the Diamond retail version/revision inventory: Spain, France, Italy, Australia, Korea, and remaining English-European packaging/build evidence.
+2. Resolve Taiwan/Hong Kong distribution and dedicated-build questions from official/local archival sources.
+3. Catalogue non-retail Diamond references separately: kiosk demo, public beta/development labels, recovery/service utilities, and distribution/event software.
+4. Expand the Japanese revision history without inferring undocumented revisions from grouped cheat-code labels.
+5. Only after the retail lineage is sufficiently stable, begin Phase 1 executable/container mapping against the Japanese-origin baseline and regional branches.
 
 Update this file whenever the project reaches a meaningful milestone or adds a new supported target.
