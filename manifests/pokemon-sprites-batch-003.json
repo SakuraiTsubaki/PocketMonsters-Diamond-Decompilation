@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "pokemon-sprites-batch-003-004-006",
+  "game": "Pocket Monsters Diamond",
+  "source_repository": "https://github.com/PokeAPI/sprites",
+  "source_commit": "2ecb4eeacd5a1718621fc30f12772e3f60d830b9",
+  "source_tree": "sprites/pokemon/versions/generation-iv/diamond-pearl",
+  "species": [
+    4,
+    5,
+    6
+  ],
+  "variant_policy": "Store every standard/shiny/back/female variant that exists at the pinned upstream commit.",
+  "deduplication": "Within this batch, byte-identical PNGs are stored once and aliases are recorded in duplicates.",
+  "source_notice": "Upstream states image contents are Copyright The Pokemon Company; upstream repository is distributed under CC0 and notes third-party rights are not cleared.",
+  "verification": "External reference",
+  "files": [
+    {
+      "path": "assets/graphics/pokemon_sprites/004-charmander/back-shiny.png",
+      "size": 872,
+      "sha256": "b47d0dee0dc22c8b506e610fd677eb004dc25932d3a26c43f9bed94330486444"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/004-charmander/back.png",
+      "size": 876,
+      "sha256": "2144102d1cff3fdcb0cab706053cc50b5b7ba8f75ef3f72bb36046bc5efb19f7"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/004-charmander/front.png",
+      "size": 821,
+      "sha256": "21013a2a9baaca2b81737deb0665efba4902ee1cc083848ab58f629757f50e8f"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/004-charmander/shiny.png",
+      "size": 815,
+      "sha256": "d77ebc1fadff9dc026c89d88661e46cd2372ab9952bb3de36f9282b148cce2f7"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/005-charmeleon/back-shiny.png",
+      "size": 1001,
+      "sha256": "dbff9184b8b90ea3399197a963dd8350467248caf5f2d94186d9a2440640251c"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/005-charmeleon/back.png",
+      "size": 1004,
+      "sha256": "00fc7900de6ddc41049bf5d50288a97635b5bc29f6f0785158f48454e60e1a00"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/005-charmeleon/front.png",
+      "size": 1108,
+      "sha256": "35d6e7c15152f2316eded3d3d89cc8b28e1409603c5b4c28b1cb23fc6c232f7a"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/005-charmeleon/shiny.png",
+      "size": 1110,
+      "sha256": "b4edafc66cfc20ef7613dddd0ed7fe4cf435c0929d1554fa0bf271c8644b910c"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/006-charizard/back-shiny.png",
+      "size": 1289,
+      "sha256": "9dc65f6e2a3378b671ab112b63659da41ea1665f1acdf08ff7d290e3405a6470"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/006-charizard/back.png",
+      "size": 1297,
+      "sha256": "c12fc9e483e20c5d77628734225674053bcea26b4715f9fa46acf59c59d1ea9b"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/006-charizard/front.png",
+      "size": 1687,
+      "sha256": "a90fef626c99a0839321ca8a16b4be10553b66579b5c4968f64c41a893babb53"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/006-charizard/shiny.png",
+      "size": 1682,
+      "sha256": "e923778e98cedb0478f5fa8199f2cd2674a401f602b266093acfdb7447a78bbb"
+    }
+  ],
+  "duplicates": []
+}
