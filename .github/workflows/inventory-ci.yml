@@ -1,0 +1,22 @@
+name: Inventory CI
+on:
+  push:
+    paths: ["tools/inventory_target.py", "manifests/version-inventory.json", ".github/workflows/inventory-ci.yml"]
+  pull_request:
+    paths: ["tools/inventory_target.py", "manifests/version-inventory.json", ".github/workflows/inventory-ci.yml"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: python -m compileall -q tools/inventory_target.py
+      - run: |
+          mkdir -p .ci/sample; printf 'x\n' > .ci/sample/a.bin; printf 'k\n' > .ci/sample/title.keys
+          python tools/inventory_target.py .ci/sample --target-id synthetic --product synthetic --output .ci/i.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('.ci/i.json').read_text()); assert d['file_count']==1 and d['omitted_sensitive_files']==1
+          PY
