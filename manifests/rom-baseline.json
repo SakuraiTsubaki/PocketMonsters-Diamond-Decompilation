@@ -1,0 +1,36 @@
+{
+  "file_name": "Pokemon_Diamond_USA_NDS-LGC.nds",
+  "file_size": 67108864,
+  "hashes": {
+    "md5": "02a1af2a677d101394b1d99164a8c249",
+    "sha1": "a46233d8b79a69ea87aa295a0efad5237d02841e",
+    "sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454"
+  },
+  "title": "POKEMON D",
+  "game_code": "ADAE",
+  "maker_code": "01",
+  "unit_code": 0,
+  "device_type": 0,
+  "device_capacity_code": 9,
+  "rom_version": 5,
+  "autostart": 0,
+  "arm9": {"rom_offset": 16384, "entry_address": 33556480, "ram_address": 33554432, "size": 1079076},
+  "arm7": {"rom_offset": 3198976, "entry_address": 37224448, "ram_address": 37224448, "size": 168732},
+  "fnt": {"offset": 3367936, "size": 5503},
+  "fat": {"offset": 3373568, "size": 2848, "entry_count": 356},
+  "arm9_overlay_table": {"offset": 1095680, "size": 2784},
+  "arm7_overlay_table": {"offset": 0, "size": 0},
+  "banner_offset": 3376640,
+  "declared_rom_size": 61169344,
+  "header_size": 16384,
+  "header_crc_stored": 51767,
+  "header_crc_calculated": 51767,
+  "header_crc_match": true,
+  "nitrofs": {
+    "file_count": 269,
+    "extensions": {".narc":149,".resdat":30,".txt":15,".bin":14,".nsbtx":11,".ncgr":10,".nclr":8,".cldat":7,".dat":7,".nanr":5,".ncer":4,".nscr":2,".nsbmd":2,".nsbca":2,".atr":1,".sdat":1,".arc":1},
+    "top_level_counts": {"data":134,"graphic":42,"poketool":24,"fielddata":16,"battle":11,"wazaeffect":9,"demo":8,"application":6,"arc":6,"contest":3,"itemtool":3,"msgdata":2,"resource":2,"dwc":1,"particledata":1,"pokeanime":1}
+  },
+  "overlays": {"arm9_count": 87, "arm7_count": 0},
+  "project_identity": {"game":"Diamond","region":"USA","language":"English","verification_status":"Verified against pret/pokediamond SHA-1 target"}
+}
