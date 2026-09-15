@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game": "Diamond",
+  "region": "USA",
+  "language": "English",
+  "target": {
+    "title": "POKEMON D",
+    "game_code": "ADAE",
+    "rom_version_byte": 5,
+    "file_size": 67108864,
+    "hashes": {
+      "md5": "02a1af2a677d101394b1d99164a8c249",
+      "sha1": "a46233d8b79a69ea87aa295a0efad5237d02841e",
+      "sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454"
+    }
+  },
+  "arm9": {
+    "rom_offset": 16384,
+    "rom_size": 1079076,
+    "load_address": 33554432,
+    "entry_address": 33556480,
+    "end_address": 34633508,
+    "hashes": {"md5": "9968c0482621fe4c840ec0d42b582480", "sha1": "dde6a342ad7c12f4f7362a252ca6a6dc7d93b4e7", "sha256": "84e3e31273e8b64fd49662d74982c7d28120c9702f436dd212511632d88828b0"}
+  },
+  "arm7": {
+    "rom_offset": 3198976,
+    "rom_size": 168732,
+    "load_address": 37224448,
+    "entry_address": 37224448,
+    "end_address": 37393180,
+    "hashes": {"md5": "ab1806d29462de49b1d0a9ef1cade60b", "sha1": "39aacbf97ae65b17783057aeed06b80049b18dee", "sha256": "14fa162bf7cddc98f2db04d927cdeca54ea54c9821b23f9cd8ce2b6cbabbe626"}
+  },
+  "overlay_tables": {"arm9": {"rom_offset": 1095680, "size": 2784, "count": 87}, "arm7": {"rom_offset": 0, "size": 0, "count": 0}},
+  "addressing_note": "Addresses are observed Nintendo DS runtime/load addresses from the ROM header and overlay table; names remain address-based until independently identified."
+}
