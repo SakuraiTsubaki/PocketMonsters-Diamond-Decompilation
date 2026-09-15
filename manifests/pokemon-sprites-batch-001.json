@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "pokemon-sprites-batch-001-bulbasaur",
+  "game": "Pocket Monsters Diamond",
+  "source_repository": "https://github.com/PokeAPI/sprites",
+  "source_tree": "sprites/pokemon/versions/generation-iv/diamond-pearl",
+  "source_notice": "Upstream states image contents are Copyright The Pokemon Company; upstream repository is distributed under CC0 and notes third-party rights are not cleared.",
+  "verification": "External reference",
+  "files": [
+    {
+      "path": "assets/graphics/pokemon_sprites/001-bulbasaur/front.png",
+      "size": 818,
+      "sha256": "bd2671092cd08c8f26abd5396ff1ecba2e0305a017bec0110fabac32e10704da"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/001-bulbasaur/back.png",
+      "size": 914,
+      "sha256": "4142f09b35090ee10afa7069c684a7270874d0f97531c6da92453242c4556a8d"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/001-bulbasaur/shiny.png",
+      "size": 822,
+      "sha256": "5203c9c2554ee33a9b849d9e4366174d492dda68346d3cf7e411f0a26d55e349"
+    },
+    {
+      "path": "assets/graphics/pokemon_sprites/001-bulbasaur/back-shiny.png",
+      "size": 922,
+      "sha256": "01504aa55837c64c8204afe7fd0f87aea24830004c0136aa3725fc115ae47572"
+    }
+  ]
+}
