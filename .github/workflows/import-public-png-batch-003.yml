@@ -1,0 +1,67 @@
+name: Import public Gen IV PNG batch 003
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-public-png-batch-003.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-pngs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch pinned public PNG batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_COMMIT='2ecb4eeacd5a1718621fc30f12772e3f60d830b9'
+          SOURCE_TREE='diamond-pearl'
+          BASE="https://raw.githubusercontent.com/PokeAPI/sprites/${SOURCE_COMMIT}/sprites/pokemon/versions/generation-iv/${SOURCE_TREE}"
+          ids=(4 5 6)
+          names=(charmander charmeleon charizard)
+          src_variants=('' 'back' 'shiny' 'back/shiny' 'female' 'back/female' 'shiny/female' 'back/shiny/female')
+          dst_variants=('front.png' 'back.png' 'shiny.png' 'back-shiny.png' 'female.png' 'back-female.png' 'shiny-female.png' 'back-shiny-female.png')
+          for i in "${!ids[@]}"; do
+            id="${ids[$i]}"; pad=$(printf '%03d' "$id"); dst="assets/graphics/pokemon_sprites/${pad}-${names[$i]}"
+            mkdir -p "$dst"
+            for j in "${!src_variants[@]}"; do
+              prefix="${src_variants[$j]}"
+              if [[ -n "$prefix" ]]; then rel="${prefix}/${id}.png"; else rel="${id}.png"; fi
+              out="${dst}/${dst_variants[$j]}"
+              if ! curl --retry 3 --retry-delay 1 -fsSL "${BASE}/${rel}" -o "$out"; then rm -f "$out"; fi
+            done
+          done
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root=Path('assets/graphics/pokemon_sprites')
+          dirs=[root/'004-charmander', root/'005-charmeleon', root/'006-charizard']
+          files=[]; seen={}; duplicates=[]
+          for d in dirs:
+              for p in sorted(d.glob('*.png')):
+                  b=p.read_bytes(); h=hashlib.sha256(b).hexdigest()
+                  if h in seen:
+                      duplicates.append({'path':p.as_posix(),'identical_to':seen[h],'sha256':h})
+                      p.unlink()
+                      continue
+                  seen[h]=p.as_posix(); files.append({'path':p.as_posix(),'size':len(b),'sha256':h})
+          manifest={'schema_version':1,'id':'pokemon-sprites-batch-003-004-006','game':'Pocket Monsters Diamond','source_repository':'https://github.com/PokeAPI/sprites','source_commit':'2ecb4eeacd5a1718621fc30f12772e3f60d830b9','source_tree':'sprites/pokemon/versions/generation-iv/diamond-pearl','species':[4,5,6],'variant_policy':'Store every standard/shiny/back/female variant that exists at the pinned upstream commit.','deduplication':'Within this batch, byte-identical PNGs are stored once and aliases are recorded in duplicates.','source_notice':'Upstream states image contents are Copyright The Pokemon Company; upstream repository is distributed under CC0 and notes third-party rights are not cleared.','verification':'External reference','files':files,'duplicates':duplicates}
+          Path('manifests/pokemon-sprites-batch-003.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+          PY
+      - name: Commit PNG batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add assets/graphics/pokemon_sprites/004-charmander assets/graphics/pokemon_sprites/005-charmeleon assets/graphics/pokemon_sprites/006-charizard manifests/pokemon-sprites-batch-003.json
+          if git diff --cached --quiet; then echo 'No changes to commit.'; exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Add public Gen IV Pokemon sprite PNG batch 003'
+          git pull --rebase origin main
+          git push origin HEAD:main
