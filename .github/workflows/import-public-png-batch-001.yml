@@ -1,0 +1,72 @@
+name: Import public Gen IV PNG batch 001
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-public-png-batch-001.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-pngs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch public sprite source
+        run: git clone --depth 1 https://github.com/PokeAPI/sprites.git /tmp/pokeapi-sprites
+
+      - name: Copy PNG batch and build manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC='/tmp/pokeapi-sprites/sprites/pokemon/versions/generation-iv/diamond-pearl'
+          DST='assets/graphics/pokemon_sprites/001-bulbasaur'
+          mkdir -p "$DST" manifests
+          install -m 0644 "$SRC/1.png" "$DST/front.png"
+          install -m 0644 "$SRC/back/1.png" "$DST/back.png"
+          install -m 0644 "$SRC/shiny/1.png" "$DST/shiny.png"
+          install -m 0644 "$SRC/back/shiny/1.png" "$DST/back-shiny.png"
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          paths = [
+              'assets/graphics/pokemon_sprites/001-bulbasaur/front.png',
+              'assets/graphics/pokemon_sprites/001-bulbasaur/back.png',
+              'assets/graphics/pokemon_sprites/001-bulbasaur/shiny.png',
+              'assets/graphics/pokemon_sprites/001-bulbasaur/back-shiny.png',
+          ]
+          files = []
+          for p in paths:
+              b = Path(p).read_bytes()
+              files.append({'path': p, 'size': len(b), 'sha256': hashlib.sha256(b).hexdigest()})
+          manifest = {
+              'schema_version': 1,
+              'id': 'pokemon-sprites-batch-001-bulbasaur',
+              'game': 'Pocket Monsters Diamond',
+              'source_repository': 'https://github.com/PokeAPI/sprites',
+              'source_tree': 'sprites/pokemon/versions/generation-iv/diamond-pearl',
+              'source_notice': 'Upstream states image contents are Copyright The Pokemon Company; upstream repository is distributed under CC0 and notes third-party rights are not cleared.',
+              'verification': 'External reference',
+              'files': files,
+          }
+          Path('manifests/pokemon-sprites-batch-001.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Commit PNG batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add assets/graphics/pokemon_sprites/001-bulbasaur manifests/pokemon-sprites-batch-001.json
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Add public Gen IV Pokemon sprite PNG batch 001'
+          git push origin HEAD:main
