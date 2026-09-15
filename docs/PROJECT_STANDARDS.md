@@ -1,0 +1,3 @@
+# Project Standards
+
+Use stable descriptive paths and meaningful original identifiers. Record material version/language/revision/region/update/form differences. Prefer editable source and deterministic generation. Keep unknowns explicit. Separate observations from hypotheses. Use hashes/stable IDs for identity. Deduplicate only after byte/hash confirmation. One live structure only: no `vN`, `PRE-VN`, `MIGRATED`, or parallel legacy trees. One canonical home per artifact/project. No complete retail/rebuilt ROMs, decrypted full-game images, keys, or disguised complete images.
