@@ -1,9 +1,0 @@
-{
-  "filename": "Pokemon_Diamond_USA_NDS-LGC.nds",
-  "size_bytes": 67108864,
-  "hashes": {"crc32": "84427823", "md5": "02a1af2a677d101394b1d99164a8c249", "sha1": "a46233d8b79a69ea87aa295a0efad5237d02841e", "sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454"},
-  "header": {"title": "POKEMON D", "game_code": "ADAE", "maker_code": "01", "unit_code": 0, "device_capacity": 9, "rom_version": 5, "arm9": {"offset": 16384, "entry": 33556480, "ram": 33554432, "size": 1079076}, "arm7": {"offset": 3198976, "entry": 37224448, "ram": 37224448, "size": 168732}, "fnt": {"offset": 3367936, "size": 5503}, "fat": {"offset": 3373568, "size": 2848}, "overlay9": {"offset": 1095680, "size": 2784, "count": 87}, "overlay7": {"offset": 0, "size": 0, "count": 0}, "banner_offset": 3376640, "used_rom_size": 61169344, "header_size": 16384},
-  "nitrofs": {"directory_count": 69, "fat_file_count": 356, "named_file_count": 269, "top_level_counts": {"__unnamed__": 87, "application": 6, "arc": 6, "battle": 11, "contest": 3, "data": 134, "demo": 8, "dwc": 1, "fielddata": 16, "graphic": 42, "itemtool": 3, "msgdata": 2, "particledata": 1, "pokeanime": 1, "poketool": 24, "resource": 2, "wazaeffect": 9}, "extension_counts": {".arc": 1, ".atr": 1, ".bin": 14, ".cldat": 7, ".dat": 7, ".nanr": 5, ".narc": 149, ".ncer": 4, ".ncgr": 10, ".nclr": 8, ".nsbca": 2, ".nsbmd": 2, ".nsbtx": 11, ".nscr": 2, ".resdat": 30, ".sdat": 1, ".txt": 15, "<none>": 87}},
-  "banner": {"version": 1, "titles": {"ja": "Pokémon Diamond\nNintendo", "en": "Pokémon Diamond\nNintendo", "fr": "Pokémon Diamond\nNintendo", "de": "Pokémon Diamond\nNintendo", "it": "Pokémon Diamond\nNintendo", "es": "Pokémon Diamond\nNintendo"}},
-  "verification": {"level": "Observed", "note": "Directly measured from the project-provided ROM. Whole-ROM SHA-1 matches the documented USA Rev 5/PRET target."}
-}
