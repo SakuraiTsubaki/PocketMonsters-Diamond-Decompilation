@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Diamond-Decompilation",
+  "platform": "Nintendo DS",
+  "lineage": "Diamond/Pearl",
+  "bootstrap": "bash tools/bootstrap_nds_toolchain.sh",
+  "check": "python3 tools/check_toolchain.py",
+  "common": {
+    "required_commands": [
+      "git",
+      "python3",
+      "make",
+      "clang",
+      "llvm-objdump",
+      "llvm-objcopy",
+      "arm-none-eabi-objdump",
+      "melonDS"
+    ],
+    "recommended_commands": [
+      "cmake",
+      "ninja",
+      "arm-none-eabi-gcc",
+      "gdb-multiarch",
+      "wine64",
+      "ndstool",
+      "dkp-pacman",
+      "desmume"
+    ],
+    "python_modules": [
+      "capstone",
+      "construct",
+      "ndspy",
+      "lief"
+    ],
+    "devkitpro_group": "nds-dev"
+  },
+  "emulator": {
+    "primary": "melonDS",
+    "version": "1.1",
+    "release": "https://github.com/melonDS-emu/melonDS/releases/tag/1.1",
+    "linux_x86_64_asset": "melonDS-1.1-ubuntu-x86_64.zip",
+    "linux_x86_64_sha256": "99465129f5413b2aad332e4377e523cf3cda905dc329d47dcb1ad01ce2cb3f66",
+    "secondary": "DeSmuME"
+  },
+  "proprietary_matching_components": {
+    "automatic_download": false,
+    "mwccarm_env": "MWCCARM_ROOT",
+    "nitrosdk_env": "NITROSDK_ROOT",
+    "status": "reference-only or TBD until exact target verification"
+  }
+}
