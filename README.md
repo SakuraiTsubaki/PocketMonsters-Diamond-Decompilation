@@ -1,27 +1,45 @@
 # PocketMonsters-Diamond-Decompilation
 
-A clean, target-specific workspace for research, analysis, and tooling related to decompiling **Pocket Monsters Diamond**.
+A complete, target-specific foundation for reproducible research, analysis, tooling, and source reconstruction related to **Pocket Monsters Diamond**.
 
-This repository intentionally starts without migrated code, assets, assumptions, or progress claims.
+| Field | Value |
+| --- | --- |
+| Working target | Pocket Monsters Diamond |
+| Platform family | Nintendo DS |
+| Series generation | Generation IV |
+| Exact build identity | Not selected; complete `PROJECT.md` and `config/target.json` before target claims |
+| Foundation status | Ready for evidence-backed work |
 
-## Target identity
+This repository begins without migrated code, assets, conclusions, or progress claims. Its first research milestone is to identify an exact, reproducible target build.
 
-The repository name identifies the working target. Before adding target data, record the exact release, region, revision, executable or image hashes, tool versions, and any other identifiers needed to reproduce the work. Do not assume that findings transfer between builds.
+## Repository areas
 
-## Scope
-
-| Area | Purpose |
+| Area | Responsibility |
 | --- | --- |
 | [`research/`](research/) | Target-specific references, experiments, questions, and methodology. |
-| [`analysis/`](analysis/) | Reproducible findings, symbols, structures, formats, comparisons, and verification records. |
-| [`tools/`](tools/) | Target-specific extraction, inspection, conversion, build, and verification utilities. |
+| [`analysis/`](analysis/) | Symbols, structures, formats, comparisons, and verified findings. |
+| [`tools/`](tools/) | Target adapters and extraction, inspection, conversion, build, and verification utilities. |
+| [`src/`](src/) | Reviewed source reconstruction and source-linked data. |
+| [`config/`](config/) | Target identity, symbols, mappings, and reproducible tool/build configuration. |
+| [`tests/`](tests/) | Unit, regression, comparison, and build-verification checks. |
+| [`progress/`](progress/) | Evidence-based milestones and unresolved blockers. |
+| [`docs/`](docs/) | Target workflow and architecture documentation. |
 
-Reusable, target-independent methods and tools belong in [`SakuraiTsubaki/Decompilation`](https://github.com/SakuraiTsubaki/Decompilation). This repository should contain only work whose scope or behavior is specific to Pocket Monsters Diamond.
+Target-independent methods and tools belong in [`SakuraiTsubaki/Decompilation`](https://github.com/SakuraiTsubaki/Decompilation).
 
-## Working rules
+## Start here
 
-- Record input provenance, hashes, versions, commands, and confidence.
-- Separate confirmed findings from probable interpretations and hypotheses.
-- Keep generated output distinct from reviewed source and analysis.
-- Do not commit copyrighted game images, firmware, credentials, private keys, or locally extracted proprietary content.
-- Add directories only when concrete work needs them; avoid placeholder trees.
+1. Complete the identity checklist in [`PROJECT.md`](PROJECT.md).
+2. Replace the unselected fields in [`config/target.json`](config/target.json) with verified identifiers.
+3. Open a focused research record from [`research/template.md`](research/template.md).
+4. Promote reproducible conclusions through [`analysis/template.md`](analysis/template.md).
+5. Add target-specific tooling with tests and documented inputs/outputs.
+6. Run `python scripts/check_repository.py .` and the unit tests before review.
+
+## Non-negotiable rules
+
+- Record provenance, hashes, versions, commands, environment, and confidence.
+- Distinguish Confirmed, Probable, and Hypothesis conclusions.
+- Never commit copyrighted game images, firmware, keys, credentials, or locally extracted proprietary content.
+- Keep generated output separate from reviewed source and analysis.
+- Add concrete work, not invented completion percentages or placeholder source trees.

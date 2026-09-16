@@ -1,5 +1,7 @@
 # Tools
 
-This directory holds utilities whose behavior or configuration is specific to Pocket Monsters Diamond.
+Target-specific tools for Pocket Monsters Diamond live here.
 
-Each tool should document supported target builds, dependencies, inputs, outputs, safety constraints, usage, and verification. Move genuinely target-independent utilities to the shared [Decompilation repository](https://github.com/SakuraiTsubaki/Decompilation).
+Each tool receives its own directory with implementation, README, tests, and small independently distributable fixtures where practical. Document supported builds, inputs, outputs, dependencies, deterministic behavior, errors, safety constraints, and verification commands.
+
+Put target-independent implementations in [`SakuraiTsubaki/Decompilation`](https://github.com/SakuraiTsubaki/Decompilation); keep only target adapters and configuration here.

@@ -1,5 +1,5 @@
 # Analysis
 
-This directory holds reproducible findings specific to Pocket Monsters Diamond.
+This directory contains durable findings for Pocket Monsters Diamond.
 
-Every report should identify the exact target build and inputs, record the procedure and evidence, distinguish **Confirmed**, **Probable**, and **Hypothesis** conclusions, and provide a verification path. Restricted inputs must remain outside the repository.
+Organize work by executable, subsystem, symbol set, structure, file format, or comparison. Begin with [`template.md`](template.md). Every report identifies an exact build, evidence, method, confidence, and verification route.

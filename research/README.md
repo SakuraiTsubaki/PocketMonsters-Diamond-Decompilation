@@ -1,5 +1,5 @@
 # Research
 
-This directory holds research specific to Pocket Monsters Diamond: references, experiments, methods, and open questions.
+Research here is specific to Pocket Monsters Diamond and an explicitly identified build.
 
-Each topic should state its target build, input provenance, reproduction steps, observations, limitations, and links to resulting analysis or tools. Move broadly reusable work to the shared [Decompilation repository](https://github.com/SakuraiTsubaki/Decompilation).
+Create one directory per focused question and begin with [`template.md`](template.md). Record provenance, hashes or versions, tools, environment, exact commands, observations, negative results, limitations, and follow-up. Raw or restricted inputs remain outside Git.
