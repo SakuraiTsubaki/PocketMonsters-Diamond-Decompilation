@@ -1,0 +1,90 @@
+name: Vendor portable NDS tools
+
+on:
+  push:
+    paths:
+      - '.github/workflows/vendor-portable-tools.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install build-only host packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential git curl ca-certificates unzip zip \
+            binutils-arm-none-eabi gdb-multiarch xdelta3 bsdiff ninja-build
+
+      - name: Build and collect redistributable tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          MELONDS_URL='https://github.com/melonDS-emu/melonDS/releases/download/1.1/melonDS-1.1-appimage-x86_64.zip'
+          MELONDS_SHA256='bf377420a2e95f2cd2cdda17d5372b51c2534f858b038db9ec6d129554875124'
+          NDSTOOL_COMMIT='4d8ef3e7451dd0c633837318612e13dbe932b52f'
+
+          rm -rf vendor/bin vendor/emulators vendor/licenses vendor/SHA256SUMS vendor/VERSIONS.txt
+          mkdir -p vendor/bin vendor/emulators vendor/licenses/ndstool vendor/licenses/packages
+
+          for tool in \
+            arm-none-eabi-as arm-none-eabi-ld arm-none-eabi-objcopy arm-none-eabi-objdump \
+            arm-none-eabi-nm arm-none-eabi-readelf arm-none-eabi-size arm-none-eabi-strip \
+            gdb-multiarch xdelta3 bsdiff bspatch ninja; do
+            src="$(command -v "$tool")"
+            cp -L "$src" "vendor/bin/$tool"
+          done
+          chmod 0755 vendor/bin/*
+
+          rm -rf "$RUNNER_TEMP/ndstool"
+          git clone --quiet https://github.com/blocksds/ndstool.git "$RUNNER_TEMP/ndstool"
+          git -C "$RUNNER_TEMP/ndstool" checkout --quiet --detach "$NDSTOOL_COMMIT"
+          make -C "$RUNNER_TEMP/ndstool" -j"$(nproc)"
+          cp "$RUNNER_TEMP/ndstool/ndstool" vendor/bin/ndstool
+          chmod 0755 vendor/bin/ndstool
+          cp "$RUNNER_TEMP/ndstool"/COPYING* vendor/licenses/ndstool/ 2>/dev/null || true
+
+          curl -fL --retry 5 --retry-delay 2 "$MELONDS_URL" -o vendor/emulators/melonDS-1.1-appimage-x86_64.zip
+          echo "$MELONDS_SHA256  vendor/emulators/melonDS-1.1-appimage-x86_64.zip" | sha256sum -c -
+
+          for pkg in binutils-arm-none-eabi gdb xdelta3 bsdiff ninja-build; do
+            if [[ -f "/usr/share/doc/$pkg/copyright" ]]; then
+              cp "/usr/share/doc/$pkg/copyright" "vendor/licenses/packages/${pkg}.copyright"
+            fi
+          done
+
+          cat > vendor/VERSIONS.txt <<EOF
+          melonDS=1.1
+          melonDS_sha256=$MELONDS_SHA256
+          ndstool_commit=$NDSTOOL_COMMIT
+          host_bundle=linux-x86_64
+          generated_by=GitHub_Actions_ubuntu-24.04
+          EOF
+
+          (
+            cd vendor
+            find bin emulators -type f -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
+          )
+
+      - name: Commit vendored payload to this branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add vendor
+          if git diff --cached --quiet; then
+            echo 'Vendored payload already matches.'
+            exit 0
+          fi
+          git commit -m 'Vendor portable NDS reverse-engineering tools'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
