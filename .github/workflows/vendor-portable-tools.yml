@@ -22,7 +22,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            build-essential git curl ca-certificates unzip zip \
+            build-essential git curl ca-certificates unzip zip busybox-static \
             binutils-arm-none-eabi gdb-multiarch xdelta3 bsdiff ninja-build
 
       - name: Build and collect redistributable tools
@@ -31,6 +31,7 @@ jobs:
           set -euo pipefail
           MELONDS_URL='https://github.com/melonDS-emu/melonDS/releases/download/1.1/melonDS-1.1-appimage-x86_64.zip'
           MELONDS_SHA256='bf377420a2e95f2cd2cdda17d5372b51c2534f858b038db9ec6d129554875124'
+          MELONDS_LICENSE_URL='https://raw.githubusercontent.com/melonDS-emu/melonDS/1.1/LICENSE'
           NDSTOOL_COMMIT='4d8ef3e7451dd0c633837318612e13dbe932b52f'
 
           rm -rf vendor/bin vendor/emulators vendor/licenses vendor/SHA256SUMS vendor/VERSIONS.txt
@@ -39,11 +40,12 @@ jobs:
           for tool in \
             arm-none-eabi-as arm-none-eabi-ld arm-none-eabi-objcopy arm-none-eabi-objdump \
             arm-none-eabi-nm arm-none-eabi-readelf arm-none-eabi-size arm-none-eabi-strip \
-            gdb-multiarch xdelta3 bsdiff bspatch ninja; do
+            gdb-multiarch xdelta3 bsdiff bspatch ninja busybox; do
             src="$(command -v "$tool")"
             cp -L "$src" "vendor/bin/$tool"
           done
           chmod 0755 vendor/bin/*
+          chmod 0755 tools/use_vendor_toolchain.sh
 
           rm -rf "$RUNNER_TEMP/ndstool"
           git clone --quiet https://github.com/blocksds/ndstool.git "$RUNNER_TEMP/ndstool"
@@ -55,8 +57,9 @@ jobs:
 
           curl -fL --retry 5 --retry-delay 2 "$MELONDS_URL" -o vendor/emulators/melonDS-1.1-appimage-x86_64.zip
           echo "$MELONDS_SHA256  vendor/emulators/melonDS-1.1-appimage-x86_64.zip" | sha256sum -c -
+          curl -fL --retry 5 --retry-delay 2 "$MELONDS_LICENSE_URL" -o vendor/licenses/melonDS-LICENSE
 
-          for pkg in binutils-arm-none-eabi gdb xdelta3 bsdiff ninja-build; do
+          for pkg in binutils-arm-none-eabi gdb xdelta3 bsdiff ninja-build busybox-static; do
             if [[ -f "/usr/share/doc/$pkg/copyright" ]]; then
               cp "/usr/share/doc/$pkg/copyright" "vendor/licenses/packages/${pkg}.copyright"
             fi
@@ -81,7 +84,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add vendor
+          git add vendor tools/use_vendor_toolchain.sh
           if git diff --cached --quiet; then
             echo 'Vendored payload already matches.'
             exit 0
