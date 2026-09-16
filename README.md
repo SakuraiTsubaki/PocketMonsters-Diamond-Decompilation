@@ -13,6 +13,13 @@ Decompilation and source-reconstruction project for **Pokémon Diamond**.
 - Keep analysis, tooling, metadata, and documentation reproducible.
 - Build a clean foundation for long-term reverse-engineering work.
 
+## 🧬 Repository characteristics
+
+- Generation IV **Nintendo DS** title with ARM9/ARM7 executables, NitroFS resources, and overlay modules.
+- High-level reconstruction of Sinnoh-era engine code, data, scripts, and archive formats.
+- Diamond-specific version content remains distinct from Pearl and later Platinum changes.
+- Overlay and filesystem boundaries are treated as first-class reconstruction units.
+
 ## 🚧 Status
 
 This repository is in its **initial setup** stage. Source reconstruction and documentation will be added progressively.
