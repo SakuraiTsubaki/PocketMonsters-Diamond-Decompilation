@@ -6,9 +6,20 @@
 - Working target name: Pocket Monsters Diamond
 - Platform family: Nintendo DS
 - Series generation: Generation IV
-- Exact release, region, revision, and build: **not yet selected**
+- Exact release, region, revision, and build: **USA English, game code `ADAE`, header ROM version `5`; complete-file public target match confirmed**
 
 The repository name is a working label, not proof of a particular binary. No address, symbol, format, or behavior should be treated as target fact until the exact build is identified.
+
+## Selected identifiers
+
+- Official/localized title: Pokémon Diamond Version
+- Game code: `ADAE`
+- Header title: `POKEMON D`
+- Region and language: USA, English
+- Header ROM version: `5`
+- Complete ROM size: `67108864` bytes
+- SHA-256: `e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454`
+- Evidence record: [`analysis/rom-identity.md`](analysis/rom-identity.md)
 
 ## Identity checklist
 

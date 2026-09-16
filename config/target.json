@@ -3,9 +3,56 @@
   "target": "Pocket Monsters Diamond",
   "platform_family": "Nintendo DS",
   "generation": "Generation IV",
-  "identity_status": "unselected",
-  "release": null,
-  "region": null,
-  "revision": null,
-  "hashes": []
+  "identity_status": "verified",
+  "release": {
+    "official_title": "Pokémon Diamond Version",
+    "distribution_form": "Nintendo DS cartridge ROM image",
+    "game_code": "ADAE",
+    "header_title": "POKEMON D",
+    "language": "English",
+    "input_provenance": "User-supplied local image; ROM bytes are not committed"
+  },
+  "region": "USA",
+  "revision": {
+    "header_rom_version": 5,
+    "label": "Header ROM version 5"
+  },
+  "size_bytes": 67108864,
+  "header": {
+    "maker_code": "01",
+    "unit_code": 0,
+    "device_capacity_exponent": 9,
+    "nominal_capacity_bytes": 67108864,
+    "crc16_stored": "ca37",
+    "crc16_calculated": "ca37",
+    "crc16_valid": true
+  },
+  "hashes": [
+    {
+      "algorithm": "SHA-256",
+      "scope": "complete ROM",
+      "value": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454"
+    },
+    {
+      "algorithm": "SHA-1",
+      "scope": "complete ROM",
+      "value": "a46233d8b79a69ea87aa295a0efad5237d02841e"
+    },
+    {
+      "algorithm": "MD5",
+      "scope": "complete ROM",
+      "value": "02a1af2a677d101394b1d99164a8c249"
+    }
+  ],
+  "verification": {
+    "observed_at": "2026-09-16",
+    "tool": "SakuraiTsubaki/Decompilation tools/nds_rom_inventory",
+    "environment": "Windows 10.0.26200; PowerShell 7.6.5; Python 3.12.14",
+    "public_reference": {
+      "status": "matched",
+      "project": "pret/pokediamond",
+      "url": "https://github.com/pret/pokediamond",
+      "note": "Complete-file SHA-1 matches the documented pokediamond.us.nds build target."
+    }
+  }
 }

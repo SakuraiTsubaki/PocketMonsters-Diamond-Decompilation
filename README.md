@@ -7,10 +7,10 @@ A complete, target-specific foundation for reproducible research, analysis, tool
 | Working target | Pocket Monsters Diamond |
 | Platform family | Nintendo DS |
 | Series generation | Generation IV |
-| Exact build identity | Not selected; complete `PROJECT.md` and `config/target.json` before target claims |
-| Foundation status | Ready for evidence-backed work |
+| Exact build identity | USA / English / `ADAE` / header ROM version 5 |
+| Foundation status | Verified by complete-file public target match |
 
-This repository begins without migrated code, assets, conclusions, or progress claims. Its first research milestone is to identify an exact, reproducible target build.
+The selected target identity is recorded in `config/target.json` and `analysis/rom-identity.md`. Restricted ROM bytes are not committed. Structural inventory and source reconstruction remain pending.
 
 ## Repository areas
 
