@@ -1,0 +1,5 @@
+melonDS=1.1
+melonDS_sha256=bf377420a2e95f2cd2cdda17d5372b51c2534f858b038db9ec6d129554875124
+ndstool_commit=4d8ef3e7451dd0c633837318612e13dbe932b52f
+host_bundle=linux-x86_64
+generated_by=GitHub_Actions_ubuntu-24.04
