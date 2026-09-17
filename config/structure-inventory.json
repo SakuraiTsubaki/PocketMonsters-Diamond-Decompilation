@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "target_game_code": "ADAE",
+  "analyzer": {
+    "repository": "SakuraiTsubaki/Decompilation",
+    "commit": "dbc8272172cfc051e1108b14291a437d1c56bafb",
+    "path": "tools/nds_rom_analyzer/analyzer.py",
+    "version": "1.0.0"
+  },
+  "provenance": {
+    "generated_at": "2026-09-17",
+    "input_sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454",
+    "input_size": 67108864,
+    "rom_bytes_committed": false
+  },
+  "command": "python tools/nds_rom_analyzer/analyzer.py /path/to/input.nds --output analysis/generated/rom-structure --label \"Pokémon Diamond Version (USA, ADAE, header ROM version 5)\"",
+  "output_directory": "analysis/generated/rom-structure",
+  "validation": {
+    "all_checks_passed": true,
+    "checks": {
+      "actual_size_equals_nominal_capacity": true,
+      "used_rom_size_within_actual_file": true,
+      "header_crc16_valid": true,
+      "nintendo_logo_crc16_valid": true,
+      "all_banner_crc_checks_valid": true,
+      "all_fat_entries_have_fnt_or_overlay_reference": true,
+      "all_overlay_file_ids_exist_in_fat": true,
+      "fat_file_ranges_non_overlapping": true
+    },
+    "decrypted_secure_area_crc_validation": "not_performed"
+  },
+  "summary": {
+    "directory_count": 69,
+    "file_count": 356,
+    "mapped_file_count": 269,
+    "arm9_overlay_count": 87,
+    "arm7_overlay_count": 0,
+    "recognized_format_count": 208,
+    "extensionless_file_count": 87,
+    "extensionless_recognized_count": 9,
+    "narc_count": 149,
+    "unreferenced_range_count": 351
+  }
+}
