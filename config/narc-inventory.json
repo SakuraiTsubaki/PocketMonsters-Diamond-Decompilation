@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "input_sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454",
+  "structure_inventory": "analysis/generated/rom-structure/structure.json",
+  "tool": {
+    "repository": "SakuraiTsubaki/Decompilation",
+    "commit": "7fa6668ce738bb02d858d2979aaddc02e2c87795",
+    "path": "tools/narc_inventory.py",
+    "version": "1.0.0"
+  },
+  "command": "python tools/narc_inventory.py analyze path/to/verified.nds analysis/generated/rom-structure/structure.json --output analysis/generated/narc-inventory",
+  "outputs": {
+    "directory": "analysis/generated/narc-inventory",
+    "inventory": "analysis/generated/narc-inventory/narc-inventory.json",
+    "member_csv_shards": [
+      "analysis/generated/narc-inventory/members/narc-members-0000.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0001.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0002.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0003.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0004.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0005.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0006.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0007.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0008.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0009.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0010.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0011.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0012.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0013.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0014.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0015.csv",
+      "analysis/generated/narc-inventory/members/narc-members-0016.csv"
+    ]
+  },
+  "checks": {
+    "expected_top_level_narcs": 149,
+    "valid_top_level_narcs": 149,
+    "malformed_top_level_narcs": 0,
+    "total_members": 33953,
+    "rom_bytes_committed": false
+  }
+}

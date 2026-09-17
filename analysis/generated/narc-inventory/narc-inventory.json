@@ -1,0 +1,6202 @@
+{
+  "schema_version": 1,
+  "tool": {
+    "name": "narc_inventory",
+    "version": "1.0.0"
+  },
+  "provenance": {
+    "input_label": "Pokémon Diamond Version (USA, ADAE, header ROM version 5)",
+    "input_rom_basename": "Pokemon_Diamond_USA_NDS-LGC.nds",
+    "input_rom_size": 67108864,
+    "input_rom_sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454",
+    "structure_inventory": "phase2_outputs\\diamond\\structure.json",
+    "structure_tool": {
+      "name": "nds_rom_analyzer",
+      "version": "1.0.0"
+    },
+    "rom_bytes_committed": false
+  },
+  "summary": {
+    "top_level_narc_count": 149,
+    "valid_top_level_narc_count": 149,
+    "malformed_top_level_narc_count": 0,
+    "nested_narc_count": 0,
+    "total_container_count": 149,
+    "total_member_count": 33953,
+    "named_member_count": 0,
+    "compression_marker_count": 3462,
+    "confirmed_compressed_member_count": 1885,
+    "invalid_lz_marker_count": 286,
+    "unsupported_compression_marker_count": 1291,
+    "unknown_member_count": 23233,
+    "format_counts": {
+      "NANR animation": 140,
+      "NCER cell": 153,
+      "NCGR graphics": 3643,
+      "NCLR palette": 2325,
+      "NSBCA animation": 37,
+      "NSBMA material animation": 10,
+      "NSBMD model": 686,
+      "NSBTA texture animation": 40,
+      "NSBTP texture-pattern animation": 28,
+      "NSBTX texture": 504,
+      "NSBVA visibility animation": 2,
+      "NSCR screen map": 243,
+      "Nintendo Huffman": 693,
+      "Nintendo LZ10": 2042,
+      "Nintendo LZ11": 129,
+      "Nintendo RLE": 45,
+      "unknown": 23233
+    },
+    "confirmed_format_counts": {
+      "NANR animation": 140,
+      "NCER cell": 153,
+      "NCGR graphics": 3643,
+      "NCLR palette": 2325,
+      "NSBCA animation": 37,
+      "NSBMA material animation": 10,
+      "NSBMD model": 686,
+      "NSBTA texture animation": 40,
+      "NSBTP texture-pattern animation": 28,
+      "NSBTX texture": 504,
+      "NSBVA visibility animation": 2,
+      "NSCR screen map": 243
+    }
+  },
+  "containers": [
+    {
+      "container_chain": "/application/custom_ball/data/cb_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/custom_ball/data/cb_data.narc",
+      "parent_file_id": 87,
+      "rom_offset": 58786304,
+      "size": 60812,
+      "sha256": "4b25ee9d91e977fcbf4be1cab7d2ba15cfb6d58983d5ef5ebeaca137409506a1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 60812,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2372,
+          "end": 2388
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2388,
+          "size": 16,
+          "end": 2404
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2404,
+          "size": 58408,
+          "end": 60812
+        }
+      ],
+      "member_count": 295,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/application/wifi_earth/wifi_earth.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/wifi_earth/wifi_earth.narc",
+      "parent_file_id": 88,
+      "rom_offset": 58401792,
+      "size": 152180,
+      "sha256": "a529c990a715b9599316abf4049a14a23b4c18a019b69a41b2630fb921460ff6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 152180,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 152072,
+          "end": 152180
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/application/wifi_earth/wifi_earth_place.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/wifi_earth/wifi_earth_place.narc",
+      "parent_file_id": 89,
+      "rom_offset": 58554368,
+      "size": 3272,
+      "sha256": "067806345d96ce91f3cd76aaafddf4b6a915c512499fbf61f49e0368a59c7e84",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 3272,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 164,
+          "end": 180
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 180,
+          "size": 16,
+          "end": 196
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 196,
+          "size": 3076,
+          "end": 3272
+        }
+      ],
+      "member_count": 19,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/application/zukanlist/zkn_data/zukan_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/zukanlist/zkn_data/zukan_data.narc",
+      "parent_file_id": 90,
+      "rom_offset": 58378752,
+      "size": 22552,
+      "sha256": "60a0e09f5a78a625cca5b7e150fd6c17dcb98bc0ba2859f7119ac585d6e04432",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 22552,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 476,
+          "end": 492
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 492,
+          "size": 16,
+          "end": 508
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 508,
+          "size": 22044,
+          "end": 22552
+        }
+      ],
+      "member_count": 58,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/application/zukanlist/zkn_data/zukan_enc_diamond.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/zukanlist/zkn_data/zukan_enc_diamond.narc",
+      "parent_file_id": 91,
+      "rom_offset": 59998208,
+      "size": 71648,
+      "sha256": "b8cb42e92606e365f31bb869ae606aade7fbecb60806f98016bc52c24734a992",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 71648,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 39644,
+          "end": 39660
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 39660,
+          "size": 16,
+          "end": 39676
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 39676,
+          "size": 31972,
+          "end": 71648
+        }
+      ],
+      "member_count": 4954,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/application/zukanlist/zkn_data/zukan_enc_pearl.narc",
+      "depth": 0,
+      "parent_narc_path": "/application/zukanlist/zkn_data/zukan_enc_pearl.narc",
+      "parent_file_id": 92,
+      "rom_offset": 60069888,
+      "size": 71624,
+      "sha256": "a57924fd8444d022afbf56dd0fe0bb9c82108e5dbfacb65572989d1227288eaa",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 71624,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 39644,
+          "end": 39660
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 39660,
+          "size": 16,
+          "end": 39676
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 39676,
+          "size": 31948,
+          "end": 71624
+        }
+      ],
+      "member_count": 4954,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/bm_anime.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/bm_anime.narc",
+      "parent_file_id": 93,
+      "rom_offset": 58937344,
+      "size": 37376,
+      "sha256": "5b46f1446499c070966515ab667ab4223bf00ea62b1b5397eda43eea629ec68b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 37376,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 524,
+          "end": 540
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 540,
+          "size": 16,
+          "end": 556
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 556,
+          "size": 36820,
+          "end": 37376
+        }
+      ],
+      "member_count": 64,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/bm_anime_list.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/bm_anime_list.narc",
+      "parent_file_id": 94,
+      "rom_offset": 58974720,
+      "size": 15032,
+      "sha256": "3547a1cc82d4388f2fc37fcf6b25176b686645dc4b0c9b70d179d9865cdd8c07",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 15032,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4292,
+          "end": 4308
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4308,
+          "size": 16,
+          "end": 4324
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4324,
+          "size": 10708,
+          "end": 15032
+        }
+      ],
+      "member_count": 535,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/encdata_ex.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/encdata_ex.narc",
+      "parent_file_id": 95,
+      "rom_offset": 58990080,
+      "size": 1828,
+      "sha256": "5a466b26b3595ff878992810881d77bda8661c2776e92036612e12fdc9026c8d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1828,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 108,
+          "end": 124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 124,
+          "size": 16,
+          "end": 140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 140,
+          "size": 1688,
+          "end": 1828
+        }
+      ],
+      "member_count": 12,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/ppark.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/ppark.narc",
+      "parent_file_id": 96,
+      "rom_offset": 58992128,
+      "size": 3020,
+      "sha256": "78ed2c1252ca3d76324b60f2fedbb7f20bc84e3ac08f55f87aa1e7ac38173528",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 3020,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 2968,
+          "end": 3020
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/ship_demo.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/ship_demo.narc",
+      "parent_file_id": 97,
+      "rom_offset": 58995200,
+      "size": 95064,
+      "sha256": "b596db0ce389ad0b3bbb3dbe4112f8e9306a3b7519036eeac6cb0ff7f36931fd",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 95064,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 172,
+          "end": 188
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 188,
+          "size": 16,
+          "end": 204
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 204,
+          "size": 94860,
+          "end": 95064
+        }
+      ],
+      "member_count": 20,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/arc/tv.narc",
+      "depth": 0,
+      "parent_narc_path": "/arc/tv.narc",
+      "parent_file_id": 98,
+      "rom_offset": 59090432,
+      "size": 896,
+      "sha256": "6bf46c807745f991dae47e3633aeae516479c2e5d84acc10767fe0c9a9bafd55",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 896,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 36,
+          "end": 52
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 52,
+          "size": 16,
+          "end": 68
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 68,
+          "size": 828,
+          "end": 896
+        }
+      ],
+      "member_count": 3,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/b_tower/btdpm.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/b_tower/btdpm.narc",
+      "parent_file_id": 99,
+      "rom_offset": 59941376,
+      "size": 22876,
+      "sha256": "776d9ad316bd6a9d97f45ca6dc5405dbf2e3e96f75a36118619bcad4081bec6c",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 22876,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 7620,
+          "end": 7636
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 7636,
+          "size": 16,
+          "end": 7652
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 7652,
+          "size": 15224,
+          "end": 22876
+        }
+      ],
+      "member_count": 951,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/b_tower/btdtr.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/b_tower/btdtr.narc",
+      "parent_file_id": 100,
+      "rom_offset": 59964416,
+      "size": 33728,
+      "sha256": "9d8e016906e413d77a3a30856764f7605c03b9c0d956601e6262a4918b0f0040",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 33728,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2468,
+          "end": 2484
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2484,
+          "size": 16,
+          "end": 2500
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2500,
+          "size": 31228,
+          "end": 33728
+        }
+      ],
+      "member_count": 307,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/graphic/b_bag_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/graphic/b_bag_gra.narc",
+      "parent_file_id": 101,
+      "rom_offset": 29578240,
+      "size": 20228,
+      "sha256": "1bad36d04c4462f5e43df643f0f2bb388f0230e917253d66401db9e2ae39ed7b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 20228,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 44,
+          "end": 60
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 60,
+          "size": 16,
+          "end": 76
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 76,
+          "size": 20152,
+          "end": 20228
+        }
+      ],
+      "member_count": 4,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/graphic/b_plist_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/graphic/b_plist_gra.narc",
+      "parent_file_id": 102,
+      "rom_offset": 29598720,
+      "size": 74408,
+      "sha256": "1786a3fdf7ddfbdb88e4c723ea7e16ebf9b4b45599264aac7bdeb523db57b300",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 74408,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 236,
+          "end": 252
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 252,
+          "size": 16,
+          "end": 268
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 268,
+          "size": 74140,
+          "end": 74408
+        }
+      ],
+      "member_count": 28,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/graphic/batt_bg.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/graphic/batt_bg.narc",
+      "parent_file_id": 103,
+      "rom_offset": 29673472,
+      "size": 640124,
+      "sha256": "bcf2c24ae32b38a546b9b293b16af3782b706fd6dc5ec9d58c1e245655ce05ab",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 640124,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2068,
+          "end": 2084
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2084,
+          "size": 16,
+          "end": 2100
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2100,
+          "size": 638024,
+          "end": 640124
+        }
+      ],
+      "member_count": 257,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/graphic/batt_obj.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/graphic/batt_obj.narc",
+      "parent_file_id": 104,
+      "rom_offset": 30313984,
+      "size": 131676,
+      "sha256": "04e5df4768970cc2c677047efd2f280a17f522017cad05436badf52d4e00ae82",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 131676,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2244,
+          "end": 2260
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2260,
+          "size": 16,
+          "end": 2276
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2276,
+          "size": 129400,
+          "end": 131676
+        }
+      ],
+      "member_count": 279,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/graphic/vs_demo_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/graphic/vs_demo_gra.narc",
+      "parent_file_id": 105,
+      "rom_offset": 30446080,
+      "size": 20864,
+      "sha256": "0f2b6db0502d559797ce7bf9c56b84fdbb5d8deed2113447e407d06b09a8af4c",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 20864,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 84,
+          "end": 100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 100,
+          "size": 16,
+          "end": 116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 116,
+          "size": 20748,
+          "end": 20864
+        }
+      ],
+      "member_count": 9,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/skill/be_seq.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/skill/be_seq.narc",
+      "parent_file_id": 106,
+      "rom_offset": 30734336,
+      "size": 16892,
+      "sha256": "9bef02e3319ba414c4146b5fff87fd727b72a655079fb3ff68a4f7c24f17b476",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 16892,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2228,
+          "end": 2244
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2244,
+          "size": 16,
+          "end": 2260
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2260,
+          "size": 14632,
+          "end": 16892
+        }
+      ],
+      "member_count": 277,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/skill/sub_seq.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/skill/sub_seq.narc",
+      "parent_file_id": 107,
+      "rom_offset": 30751232,
+      "size": 51000,
+      "sha256": "0cd8c8fc49d79a2b852c5427f0bfd1a8d7ecb1f60e8154c83ee191feae4f86af",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 51000,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 2356,
+          "end": 2372
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 2372,
+          "size": 16,
+          "end": 2388
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2388,
+          "size": 48612,
+          "end": 51000
+        }
+      ],
+      "member_count": 293,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/skill/waza_seq.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/skill/waza_seq.narc",
+      "parent_file_id": 108,
+      "rom_offset": 30802432,
+      "size": 6416,
+      "sha256": "31a96dbb1ae49166726cc66e604444d24ab92eed57103822cef84630afe80e89",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 6416,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4020,
+          "end": 4036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4036,
+          "size": 16,
+          "end": 4052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4052,
+          "size": 2364,
+          "end": 6416
+        }
+      ],
+      "member_count": 501,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/battle/tr_ai/tr_ai_seq.narc",
+      "depth": 0,
+      "parent_narc_path": "/battle/tr_ai/tr_ai_seq.narc",
+      "parent_file_id": 109,
+      "rom_offset": 58894848,
+      "size": 42448,
+      "sha256": "74b17cd373c63c5aa9fa5e7e909c7037f768b443c726eee51ed0f0278efd709d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 42448,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 42396,
+          "end": 42448
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/contest/data/contest_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/contest/data/contest_data.narc",
+      "parent_file_id": 110,
+      "rom_offset": 58330112,
+      "size": 14140,
+      "sha256": "7cf7c17d07b805fc4d6c65b7b23e6d25b0b94e87f5cf0d729c308ed2b1b9496f",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 14140,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 132,
+          "end": 148
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 148,
+          "size": 16,
+          "end": 164
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 164,
+          "size": 13976,
+          "end": 14140
+        }
+      ],
+      "member_count": 15,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/contest/graphic/contest_bg.narc",
+      "depth": 0,
+      "parent_narc_path": "/contest/graphic/contest_bg.narc",
+      "parent_file_id": 111,
+      "rom_offset": 58225152,
+      "size": 80708,
+      "sha256": "604fc581c1d39592afe5ea72a2a14365c9a06c2c4c0b4267b4663d58248bf8da",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 80708,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 332,
+          "end": 348
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 348,
+          "size": 16,
+          "end": 364
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 364,
+          "size": 80344,
+          "end": 80708
+        }
+      ],
+      "member_count": 40,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/contest/graphic/contest_obj.narc",
+      "depth": 0,
+      "parent_narc_path": "/contest/graphic/contest_obj.narc",
+      "parent_file_id": 112,
+      "rom_offset": 58306048,
+      "size": 23844,
+      "sha256": "43bb5b2c71de2e630bafac397cc0e103f3add14645d2a2ecc73280f7e2f42bd1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 23844,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 788,
+          "end": 804
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 804,
+          "size": 16,
+          "end": 820
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 820,
+          "size": 23024,
+          "end": 23844
+        }
+      ],
+      "member_count": 97,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/demo_climax.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/demo_climax.narc",
+      "parent_file_id": 126,
+      "rom_offset": 3405824,
+      "size": 472620,
+      "sha256": "18d011c800914e0410979a16996dcdf6cca15ba384aa85d9973a769ab6def94e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 472620,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 172,
+          "end": 188
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 188,
+          "size": 16,
+          "end": 204
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 204,
+          "size": 472416,
+          "end": 472620
+        }
+      ],
+      "member_count": 20,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/field_cutin.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/field_cutin.narc",
+      "parent_file_id": 139,
+      "rom_offset": 4172800,
+      "size": 53792,
+      "sha256": "1634f209420540f1fda098e8269f7830debbad9e33ad3fc3a33c1fd1bd89598e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 53792,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 164,
+          "end": 180
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 180,
+          "size": 16,
+          "end": 196
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 196,
+          "size": 53596,
+          "end": 53792
+        }
+      ],
+      "member_count": 19,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/namein.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/namein.narc",
+      "parent_file_id": 162,
+      "rom_offset": 4290048,
+      "size": 16216,
+      "sha256": "7143a5494cdd8f390b60da3dc7cb5ad9577f61dd6b1d27c9f941b4935c4c68f2",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 16216,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 164,
+          "end": 180
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 180,
+          "size": 16,
+          "end": 196
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 196,
+          "size": 16020,
+          "end": 16216
+        }
+      ],
+      "member_count": 19,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/slot.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/slot.narc",
+      "parent_file_id": 186,
+      "rom_offset": 4353536,
+      "size": 88388,
+      "sha256": "f8f3652b02d4ca83e6962e925333721d7e01d8ce004ae4ada7bc5493b05e4b49",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 88388,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 628,
+          "end": 644
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 644,
+          "size": 16,
+          "end": 660
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 660,
+          "size": 87728,
+          "end": 88388
+        }
+      ],
+      "member_count": 77,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/tradelist.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/tradelist.narc",
+      "parent_file_id": 212,
+      "rom_offset": 4467712,
+      "size": 10868,
+      "sha256": "69ff435241dccf7824b576313f539c64ee48d0b3d148f2926e8f8abc9dca0f5b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 10868,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 116,
+          "end": 132
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 132,
+          "size": 16,
+          "end": 148
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 148,
+          "size": 10720,
+          "end": 10868
+        }
+      ],
+      "member_count": 13,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/trapmark.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/trapmark.narc",
+      "parent_file_id": 213,
+      "rom_offset": 4478976,
+      "size": 612,
+      "sha256": "6f577df39a0bc2efb3605011ec4b424575c4316d5c361f88a461d7ac89455a79",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 612,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 560,
+          "end": 612
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ug_anim.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ug_anim.narc",
+      "parent_file_id": 214,
+      "rom_offset": 4480000,
+      "size": 23680,
+      "sha256": "cd49b51638dcf62c8f98725b613496d430b88ceab8c890d152f615548c69fb89",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 23680,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 23572,
+          "end": 23680
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ug_fossil.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ug_fossil.narc",
+      "parent_file_id": 218,
+      "rom_offset": 4512256,
+      "size": 16088,
+      "sha256": "4f48a58a7eaedfe8274d27bc35ca478f9d66e677a8fe766f3fd8ceaaf6642236",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 16088,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 36,
+          "end": 52
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 52,
+          "size": 16,
+          "end": 68
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 68,
+          "size": 16020,
+          "end": 16088
+        }
+      ],
+      "member_count": 3,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ug_parts.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ug_parts.narc",
+      "parent_file_id": 224,
+      "rom_offset": 4532224,
+      "size": 133020,
+      "sha256": "6aef71920a64161cb0879222c36a89a2b6a2be34db605b8ad68766c2b5f2c68d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 133020,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 940,
+          "end": 956
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 956,
+          "size": 16,
+          "end": 972
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 972,
+          "size": 132048,
+          "end": 133020
+        }
+      ],
+      "member_count": 116,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ug_radar.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ug_radar.narc",
+      "parent_file_id": 225,
+      "rom_offset": 4665344,
+      "size": 14440,
+      "sha256": "38c022b32cbfb6be13a80aef230dceb386785284da947a1357a44d8a6019fec2",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 14440,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 68,
+          "end": 84
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 84,
+          "size": 16,
+          "end": 100
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 100,
+          "size": 14340,
+          "end": 14440
+        }
+      ],
+      "member_count": 7,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ug_trap.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ug_trap.narc",
+      "parent_file_id": 226,
+      "rom_offset": 4680192,
+      "size": 121772,
+      "sha256": "41fd698d83b7f883100b7cd2d2796486ac6fd2293da4736e1fda7bbaee571fc3",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 121772,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 436,
+          "end": 452
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 452,
+          "size": 16,
+          "end": 468
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 468,
+          "size": 121304,
+          "end": 121772
+        }
+      ],
+      "member_count": 53,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/ugeffect_obj_graphic.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/ugeffect_obj_graphic.narc",
+      "parent_file_id": 227,
+      "rom_offset": 4802048,
+      "size": 19816,
+      "sha256": "7b5ddd52efc8daeb79eb517c71f72c2f6da461a4723eb80cc72ef7ea065d2ffb",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 19816,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 84,
+          "end": 100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 100,
+          "size": 16,
+          "end": 116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 116,
+          "size": 19700,
+          "end": 19816
+        }
+      ],
+      "member_count": 9,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/underg_radar.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/underg_radar.narc",
+      "parent_file_id": 235,
+      "rom_offset": 4825600,
+      "size": 41524,
+      "sha256": "f02b453a55678f112c31b7a78b794d132b25212641a767f83f3cf42017cd704d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 41524,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 68,
+          "end": 84
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 84,
+          "size": 16,
+          "end": 100
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 100,
+          "size": 41424,
+          "end": 41524
+        }
+      ],
+      "member_count": 7,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/weather_sys.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/weather_sys.narc",
+      "parent_file_id": 238,
+      "rom_offset": 5766144,
+      "size": 63656,
+      "sha256": "a52f8b2f311a1397a1a97a011d904f5ca28e6674239f16605515a5b5eeee59c3",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 63656,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 484,
+          "end": 500
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 500,
+          "size": 16,
+          "end": 516
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 516,
+          "size": 63140,
+          "end": 63656
+        }
+      ],
+      "member_count": 59,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/wifinote.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/wifinote.narc",
+      "parent_file_id": 240,
+      "rom_offset": 5831168,
+      "size": 14668,
+      "sha256": "85e6f3744806c16014eff71abcfe70e4cd7b60cc80bebdb542617f92df00c82b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 14668,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 108,
+          "end": 124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 124,
+          "size": 16,
+          "end": 140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 140,
+          "size": 14528,
+          "end": 14668
+        }
+      ],
+      "member_count": 12,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/wifip2pmatch.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/wifip2pmatch.narc",
+      "parent_file_id": 241,
+      "rom_offset": 5846016,
+      "size": 15892,
+      "sha256": "aeeec3912fc435255ab8f076a5124c8afa6866b6710ec09f9a71f137165ed20f",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 15892,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 100,
+          "end": 116
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 116,
+          "size": 16,
+          "end": 132
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 132,
+          "size": 15760,
+          "end": 15892
+        }
+      ],
+      "member_count": 11,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/mmodel/fldeff.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/mmodel/fldeff.narc",
+      "parent_file_id": 244,
+      "rom_offset": 35922432,
+      "size": 114328,
+      "sha256": "6bd19c67ab558cebe32bfc8c031ff2995ad2f494ff8826eff781cd6a0c24c701",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 114328,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1044,
+          "end": 1060
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1060,
+          "size": 16,
+          "end": 1076
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1076,
+          "size": 113252,
+          "end": 114328
+        }
+      ],
+      "member_count": 129,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/data/mmodel/mmodel.narc",
+      "depth": 0,
+      "parent_narc_path": "/data/mmodel/mmodel.narc",
+      "parent_file_id": 245,
+      "rom_offset": 34708480,
+      "size": 1213532,
+      "sha256": "888316b815ca5c290cf13865005536cba79ed2ee84982d391cd348a390993bcf",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1213532,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 3324,
+          "end": 3340
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 3340,
+          "size": 16,
+          "end": 3356
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 3356,
+          "size": 1210176,
+          "end": 1213532
+        }
+      ],
+      "member_count": 414,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/egg/data/egg_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/egg/data/egg_data.narc",
+      "parent_file_id": 247,
+      "rom_offset": 58847232,
+      "size": 11004,
+      "sha256": "c4fcc55205b9fbc52a00fad3451b6f8766e94bb05f90578ff7f66cc78ea8a134",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 11004,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 100,
+          "end": 116
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 116,
+          "size": 16,
+          "end": 132
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 132,
+          "size": 10872,
+          "end": 11004
+        }
+      ],
+      "member_count": 11,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/egg/data/particle/egg_demo_particle.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/egg/data/particle/egg_demo_particle.narc",
+      "parent_file_id": 248,
+      "rom_offset": 58858496,
+      "size": 9708,
+      "sha256": "97429870ad23f453d0d10aae69d899ddc9825b2ecd6fe06917563d9f54b4819a",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 9708,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 28,
+          "end": 44
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 44,
+          "size": 16,
+          "end": 60
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 60,
+          "size": 9648,
+          "end": 9708
+        }
+      ],
+      "member_count": 2,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/intro/intro.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/intro/intro.narc",
+      "parent_file_id": 249,
+      "rom_offset": 59127296,
+      "size": 111500,
+      "sha256": "848fee0f0e9d86bdf02709749ab8a7908e2c9e3a598a528c5f8f00a03f6d4649",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 111500,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 396,
+          "end": 412
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 412,
+          "size": 16,
+          "end": 428
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 428,
+          "size": 111072,
+          "end": 111500
+        }
+      ],
+      "member_count": 48,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/intro/intro_tv.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/intro/intro_tv.narc",
+      "parent_file_id": 250,
+      "rom_offset": 59238912,
+      "size": 57312,
+      "sha256": "a2b72b17bdb24a6b7229a30244b06e718c3e923887912cd035bd4c30c1410b60",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 57312,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 68,
+          "end": 84
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 84,
+          "size": 16,
+          "end": 100
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 100,
+          "size": 57212,
+          "end": 57312
+        }
+      ],
+      "member_count": 7,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/shinka/data/particle/shinka_demo_particle.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/shinka/data/particle/shinka_demo_particle.narc",
+      "parent_file_id": 251,
+      "rom_offset": 59117568,
+      "size": 9364,
+      "sha256": "4519249fa8c3c6da9c20579dde3a6447aaa77b05f5c33f8f92eff5cbdbd4a3b1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 9364,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 28,
+          "end": 44
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 44,
+          "size": 16,
+          "end": 60
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 60,
+          "size": 9304,
+          "end": 9364
+        }
+      ],
+      "member_count": 2,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/syoujyou/syoujyou.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/syoujyou/syoujyou.narc",
+      "parent_file_id": 252,
+      "rom_offset": 59915264,
+      "size": 25796,
+      "sha256": "2864aeaf82701fc0c9668ad609779a41a97a347d43c1b2207fb053516ab0b7f3",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 25796,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 108,
+          "end": 124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 124,
+          "size": 16,
+          "end": 140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 140,
+          "size": 25656,
+          "end": 25796
+        }
+      ],
+      "member_count": 12,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/title/op_demo.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/title/op_demo.narc",
+      "parent_file_id": 253,
+      "rom_offset": 59296256,
+      "size": 618888,
+      "sha256": "8336cb1c146eb1d18f0bd5ac61b83327ab2f952667cc65c27523f2c695933aaf",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 618888,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 604,
+          "end": 620
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 620,
+          "size": 16,
+          "end": 636
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 636,
+          "size": 618252,
+          "end": 618888
+        }
+      ],
+      "member_count": 74,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/demo/title/titledemo.narc",
+      "depth": 0,
+      "parent_narc_path": "/demo/title/titledemo.narc",
+      "parent_file_id": 254,
+      "rom_offset": 58557952,
+      "size": 228112,
+      "sha256": "78f6975f4c51cda3ade8c4d9547786d48632d3a7c8f73be9d8042c55adc69f60",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 228112,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 172,
+          "end": 188
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 188,
+          "size": 16,
+          "end": 204
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 204,
+          "size": 227908,
+          "end": 228112
+        }
+      ],
+      "member_count": 20,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/areadata/area_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/areadata/area_data.narc",
+      "parent_file_id": 256,
+      "rom_offset": 40980480,
+      "size": 996,
+      "sha256": "e839931d138154a330ce9bfd04b0db8da5ac4f2d28f73919e2abe5e6da2b5e6e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 996,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 484,
+          "end": 500
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 500,
+          "size": 16,
+          "end": 516
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 516,
+          "size": 480,
+          "end": 996
+        }
+      ],
+      "member_count": 59,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/areadata/area_build_model/area_build.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/areadata/area_build_model/area_build.narc",
+      "parent_file_id": 257,
+      "rom_offset": 40981504,
+      "size": 4724,
+      "sha256": "2b6b92d60559faacd6682355303462e135f3eda456f0b2a28a25bc46ec37c6aa",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 4724,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 452,
+          "end": 468
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 468,
+          "size": 16,
+          "end": 484
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 484,
+          "size": 4240,
+          "end": 4724
+        }
+      ],
+      "member_count": 55,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/areadata/area_build_model/areabm_texset.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/areadata/area_build_model/areabm_texset.narc",
+      "parent_file_id": 258,
+      "rom_offset": 40986624,
+      "size": 1201332,
+      "sha256": "717a9dcca499b1c75f0c31cbd37f0e24b2703bf03c61e92bb5553dcfb0dfd6a7",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1201332,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 452,
+          "end": 468
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 468,
+          "size": 16,
+          "end": 484
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 484,
+          "size": 1200848,
+          "end": 1201332
+        }
+      ],
+      "member_count": 55,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/areadata/area_map_tex/map_tex_set.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/areadata/area_map_tex/map_tex_set.narc",
+      "parent_file_id": 259,
+      "rom_offset": 42188288,
+      "size": 1256784,
+      "sha256": "d333762813f9d4fb136a9d1bab08f06e612902b5e16f8cd7e28866179d16fb3d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1256784,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 476,
+          "end": 492
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 492,
+          "size": 16,
+          "end": 508
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 508,
+          "size": 1256276,
+          "end": 1256784
+        }
+      ],
+      "member_count": 58,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/areadata/area_move_model/move_model_list.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/areadata/area_move_model/move_model_list.narc",
+      "parent_file_id": 260,
+      "rom_offset": 43445248,
+      "size": 1240,
+      "sha256": "a7c17c4e3c40975ca46762ebbf7dc0aedc02793c50b2f030cc220f766ecd52ba",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1240,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 484,
+          "end": 500
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 500,
+          "size": 16,
+          "end": 516
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 516,
+          "size": 724,
+          "end": 1240
+        }
+      ],
+      "member_count": 59,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/build_model/build_model.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/build_model/build_model.narc",
+      "parent_file_id": 261,
+      "rom_offset": 39043584,
+      "size": 1918412,
+      "sha256": "9162d14c30396dadb096ed31bf05abb5f1faf81c233b8b7f54ec56e3e23069fc",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1918412,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4292,
+          "end": 4308
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4308,
+          "size": 16,
+          "end": 4324
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4324,
+          "size": 1914088,
+          "end": 1918412
+        }
+      ],
+      "member_count": 535,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/encountdata/d_enc_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/encountdata/d_enc_data.narc",
+      "parent_file_id": 263,
+      "rom_offset": 38884864,
+      "size": 79108,
+      "sha256": "8872da981014c6da71a0ba6d20ad05ccefafa3e1895d9b1295f588fd7af64080",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 79108,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1476,
+          "end": 1492
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1492,
+          "size": 16,
+          "end": 1508
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1508,
+          "size": 77600,
+          "end": 79108
+        }
+      ],
+      "member_count": 183,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/encountdata/p_enc_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/encountdata/p_enc_data.narc",
+      "parent_file_id": 264,
+      "rom_offset": 38964224,
+      "size": 79108,
+      "sha256": "41be039d459f5eeacfb537a79d3237cfe3b0ba9d3e4310f40d6d2c20853839e6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 79108,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1476,
+          "end": 1492
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1492,
+          "size": 16,
+          "end": 1508
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1508,
+          "size": 77600,
+          "end": 79108
+        }
+      ],
+      "member_count": 183,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/eventdata/zone_event_release.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/eventdata/zone_event_release.narc",
+      "parent_file_id": 265,
+      "rom_offset": 38744576,
+      "size": 140020,
+      "sha256": "3b61439a26b1c4bc6de9b1301a5a3073f6edf2b392082a4427e8ef3228bb23a4",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 140020,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4108,
+          "end": 4124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4124,
+          "size": 16,
+          "end": 4140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4140,
+          "size": 135880,
+          "end": 140020
+        }
+      ],
+      "member_count": 512,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/land_data/land_data_release.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/land_data/land_data_release.narc",
+      "parent_file_id": 266,
+      "rom_offset": 43446784,
+      "size": 14778156,
+      "sha256": "1c8d3c0e0c2de3170a61c8b021e4a1c6e8ece54fbe65f4c7faff2bcc83b1e1e1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 14778156,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4636,
+          "end": 4652
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4652,
+          "size": 16,
+          "end": 4668
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4668,
+          "size": 14773488,
+          "end": 14778156
+        }
+      ],
+      "member_count": 578,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/mapmatrix/map_matrix.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/mapmatrix/map_matrix.narc",
+      "parent_file_id": 267,
+      "rom_offset": 40968192,
+      "size": 11800,
+      "sha256": "22190b1455e3655a239ff6340c577d03839247725d6a01dcf11931c549fdb339",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 11800,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1972,
+          "end": 1988
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1988,
+          "size": 16,
+          "end": 2004
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 2004,
+          "size": 9796,
+          "end": 11800
+        }
+      ],
+      "member_count": 245,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/mm_list/move_model_list.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/mm_list/move_model_list.narc",
+      "parent_file_id": 269,
+      "rom_offset": 58868224,
+      "size": 612,
+      "sha256": "565877e4a06cb02b58f02a3f261735d34b1f4fc7c5801b0afb3a9e78c4860e82",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 612,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 140,
+          "end": 156
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 156,
+          "size": 16,
+          "end": 172
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 172,
+          "size": 440,
+          "end": 612
+        }
+      ],
+      "member_count": 16,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/pokemon_trade/fld_trade.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/pokemon_trade/fld_trade.narc",
+      "parent_file_id": 270,
+      "rom_offset": 59117056,
+      "size": 404,
+      "sha256": "f7884ee1a0b23399f4e9cb6317b1d61ee10cf99a6ed8bb64f971e79fd27f4101",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 404,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 44,
+          "end": 60
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 60,
+          "size": 16,
+          "end": 76
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 76,
+          "size": 328,
+          "end": 404
+        }
+      ],
+      "member_count": 4,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/fielddata/script/scr_seq_release.narc",
+      "depth": 0,
+      "parent_narc_path": "/fielddata/script/scr_seq_release.narc",
+      "parent_file_id": 271,
+      "rom_offset": 30869504,
+      "size": 219608,
+      "sha256": "c62e6f7f537fbff6604ba0e7985270ace40562d5a6912f2661b892545f039af7",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 219608,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 8420,
+          "end": 8436
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 8436,
+          "size": 16,
+          "end": 8452
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 8452,
+          "size": 211156,
+          "end": 219608
+        }
+      ],
+      "member_count": 1051,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/bag_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/bag_gra.narc",
+      "parent_file_id": 272,
+      "rom_offset": 31089152,
+      "size": 105588,
+      "sha256": "5e1d21ef61cc5a3236f83a785295e5f8354706623e0898ab39a114e235b75c1d",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 105588,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 324,
+          "end": 340
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 340,
+          "size": 16,
+          "end": 356
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 356,
+          "size": 105232,
+          "end": 105588
+        }
+      ],
+      "member_count": 39,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/box.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/box.narc",
+      "parent_file_id": 273,
+      "rom_offset": 31195136,
+      "size": 113440,
+      "sha256": "91851f69a7d2349126a90c1b4c0d517b1f09b518434ce5e6c5a10c88efa8d848",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 113440,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 980,
+          "end": 996
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 996,
+          "size": 16,
+          "end": 1012
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1012,
+          "size": 112428,
+          "end": 113440
+        }
+      ],
+      "member_count": 121,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/btower.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/btower.narc",
+      "parent_file_id": 274,
+      "rom_offset": 31308800,
+      "size": 16888,
+      "sha256": "44ed333d18cbf238ccf8e3b40777ef5865f8b1607f2c9523eb86d66ac9113b17",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 16888,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 84,
+          "end": 100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 100,
+          "size": 16,
+          "end": 116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 116,
+          "size": 16772,
+          "end": 16888
+        }
+      ],
+      "member_count": 9,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/config_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/config_gra.narc",
+      "parent_file_id": 275,
+      "rom_offset": 31325696,
+      "size": 684,
+      "sha256": "cd4fdb2d299ace3698da3ca72f4acf961759128fa4fd08dc3afe50c0396778e6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 684,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 36,
+          "end": 52
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 52,
+          "size": 16,
+          "end": 68
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 68,
+          "size": 616,
+          "end": 684
+        }
+      ],
+      "member_count": 3,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/demo_trade.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/demo_trade.narc",
+      "parent_file_id": 276,
+      "rom_offset": 31326720,
+      "size": 31512,
+      "sha256": "84c5643070177367c342b8d5a18c679639b03c305b77933fb007a929e74f99cf",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 31512,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 236,
+          "end": 252
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 252,
+          "size": 16,
+          "end": 268
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 268,
+          "size": 31244,
+          "end": 31512
+        }
+      ],
+      "member_count": 28,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/dendou_demo.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/dendou_demo.narc",
+      "parent_file_id": 277,
+      "rom_offset": 31358464,
+      "size": 1564,
+      "sha256": "d3f76c5c4cc8c5fa92b659a0e8442e36eb9523d8f4fd33144f684926995e9e95",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1564,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 52,
+          "end": 68
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 68,
+          "size": 16,
+          "end": 84
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 84,
+          "size": 1480,
+          "end": 1564
+        }
+      ],
+      "member_count": 5,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/dendou_pc.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/dendou_pc.narc",
+      "parent_file_id": 278,
+      "rom_offset": 31360512,
+      "size": 668,
+      "sha256": "3844b3b7482c93aa0e6397e3ed09f390e61e10bbc839b902ed26760b30c68dae",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 668,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 36,
+          "end": 52
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 52,
+          "size": 16,
+          "end": 68
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 68,
+          "size": 600,
+          "end": 668
+        }
+      ],
+      "member_count": 3,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/ending.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/ending.narc",
+      "parent_file_id": 279,
+      "rom_offset": 31361536,
+      "size": 333468,
+      "sha256": "a1584955051e0f3d5394b98c60e1f4c4400652ed841999dc33a2344d0d9c9941",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 333468,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 548,
+          "end": 564
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 564,
+          "size": 16,
+          "end": 580
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 580,
+          "size": 332888,
+          "end": 333468
+        }
+      ],
+      "member_count": 67,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/ev_pokeselect.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/ev_pokeselect.narc",
+      "parent_file_id": 280,
+      "rom_offset": 31695360,
+      "size": 140580,
+      "sha256": "57f6359243b2e663b5a23aa525f2719f0f2333e419580d4dbb227fc015be02b0",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 140580,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 156,
+          "end": 172
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 172,
+          "size": 16,
+          "end": 188
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 188,
+          "size": 140392,
+          "end": 140580
+        }
+      ],
+      "member_count": 18,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/f_note_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/f_note_gra.narc",
+      "parent_file_id": 281,
+      "rom_offset": 31836160,
+      "size": 10620,
+      "sha256": "3a1b1600f28697f037f39be18786cb600a020bebba6e26e85971bb813e0e2b3a",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 10620,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 60,
+          "end": 76
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 76,
+          "size": 16,
+          "end": 92
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 92,
+          "size": 10528,
+          "end": 10620
+        }
+      ],
+      "member_count": 6,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/field_board.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/field_board.narc",
+      "parent_file_id": 282,
+      "rom_offset": 31846912,
+      "size": 43260,
+      "sha256": "64865ba617900ee04abc7dc4090db2b0c128fba907eb65ee2a734090bdf9dca9",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 43260,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 428,
+          "end": 444
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 444,
+          "size": 16,
+          "end": 460
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 460,
+          "size": 42800,
+          "end": 43260
+        }
+      ],
+      "member_count": 52,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/field_encounteffect.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/field_encounteffect.narc",
+      "parent_file_id": 283,
+      "rom_offset": 31890432,
+      "size": 38664,
+      "sha256": "6fdf8c5486042c5401361a9a3c7cfd772771afe409b288fed50ec074167538df",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 38664,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 220,
+          "end": 236
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 236,
+          "size": 16,
+          "end": 252
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 252,
+          "size": 38412,
+          "end": 38664
+        }
+      ],
+      "member_count": 26,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/fld_comact.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/fld_comact.narc",
+      "parent_file_id": 284,
+      "rom_offset": 31929344,
+      "size": 868,
+      "sha256": "1ca3e421c0ad0a380bc6ecb063aba373097af1f80e70113c87f245185b7bc437",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 868,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 44,
+          "end": 60
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 60,
+          "size": 16,
+          "end": 76
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 76,
+          "size": 792,
+          "end": 868
+        }
+      ],
+      "member_count": 4,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/font.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/font.narc",
+      "parent_file_id": 285,
+      "rom_offset": 31930368,
+      "size": 134744,
+      "sha256": "be387cbeec816dbad5065a38023971262523141362aded9c834a0b29e7172ee8",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 134744,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 134636,
+          "end": 134744
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/fontoam.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/fontoam.narc",
+      "parent_file_id": 286,
+      "rom_offset": 32065536,
+      "size": 1444,
+      "sha256": "5ccff2254dbf1fe7df12be151d74de7b5a6c6d44c49d3a3fc0cee77419ed1fb7",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1444,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 108,
+          "end": 124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 124,
+          "size": 16,
+          "end": 140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 140,
+          "size": 1304,
+          "end": 1444
+        }
+      ],
+      "member_count": 12,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/hiden_effect.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/hiden_effect.narc",
+      "parent_file_id": 287,
+      "rom_offset": 32067072,
+      "size": 32276,
+      "sha256": "85d834c089435928fcea971930c872f0cb62040ddd421a25c8e4dda91910a7dc",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 32276,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 132,
+          "end": 148
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 148,
+          "size": 16,
+          "end": 164
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 164,
+          "size": 32112,
+          "end": 32276
+        }
+      ],
+      "member_count": 15,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/imageclip.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/imageclip.narc",
+      "parent_file_id": 288,
+      "rom_offset": 32099840,
+      "size": 255536,
+      "sha256": "b9e5fdc4781e07ff904efb3605eec2b94824c8ef8e4f04f7d9745612efeded99",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 255536,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1900,
+          "end": 1916
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1916,
+          "size": 16,
+          "end": 1932
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1932,
+          "size": 253604,
+          "end": 255536
+        }
+      ],
+      "member_count": 236,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/mail_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/mail_gra.narc",
+      "parent_file_id": 289,
+      "rom_offset": 32355840,
+      "size": 106800,
+      "sha256": "e0c78256d8335716657696d8363b71671606d5634d69e0cfdeb188ee9fde7655",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 106800,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 308,
+          "end": 324
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 324,
+          "size": 16,
+          "end": 340
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 340,
+          "size": 106460,
+          "end": 106800
+        }
+      ],
+      "member_count": 37,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/menu_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/menu_gra.narc",
+      "parent_file_id": 290,
+      "rom_offset": 32462848,
+      "size": 19312,
+      "sha256": "63bbfa26edf4845d061ea5784b7b73186f73cb5e5f394ca57239a62905d3f776",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 19312,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 100,
+          "end": 116
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 116,
+          "size": 16,
+          "end": 132
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 132,
+          "size": 19180,
+          "end": 19312
+        }
+      ],
+      "member_count": 11,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/mysign.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/mysign.narc",
+      "parent_file_id": 291,
+      "rom_offset": 32482304,
+      "size": 4280,
+      "sha256": "f36c892150dee7567ade0c901eb52ae2fa9d814a53fdeddfa63dd48c46cdc94f",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 4280,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 92,
+          "end": 108
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 108,
+          "size": 16,
+          "end": 124
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 124,
+          "size": 4156,
+          "end": 4280
+        }
+      ],
+      "member_count": 10,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/mystery.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/mystery.narc",
+      "parent_file_id": 292,
+      "rom_offset": 32486912,
+      "size": 30916,
+      "sha256": "573a8e721970849947bc3e5cd439b13aa0297d382fc4d9870af1a81e2ff786d1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 30916,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 348,
+          "end": 364
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 364,
+          "size": 16,
+          "end": 380
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 380,
+          "size": 30536,
+          "end": 30916
+        }
+      ],
+      "member_count": 42,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/ntag_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/ntag_gra.narc",
+      "parent_file_id": 293,
+      "rom_offset": 32518144,
+      "size": 183920,
+      "sha256": "1b969b5e73d02857755726622b61c5251dfa3f068a410296d193d22fa6d44d6f",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 183920,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1084,
+          "end": 1100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1100,
+          "size": 16,
+          "end": 1116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1116,
+          "size": 182804,
+          "end": 183920
+        }
+      ],
+      "member_count": 134,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/nutmixer.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/nutmixer.narc",
+      "parent_file_id": 294,
+      "rom_offset": 32702464,
+      "size": 180980,
+      "sha256": "2389bcbcfb89db63fee618ee6b2748bf7ff2c306d1f55d989cbb771fc0f236bb",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 180980,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 396,
+          "end": 412
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 412,
+          "size": 16,
+          "end": 428
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 428,
+          "size": 180552,
+          "end": 180980
+        }
+      ],
+      "member_count": 48,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/oekaki.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/oekaki.narc",
+      "parent_file_id": 295,
+      "rom_offset": 32883712,
+      "size": 5412,
+      "sha256": "a81ac3264060405b30d9393f0dfc6bde237479fed739e124310e09991a5be4a1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 5412,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 84,
+          "end": 100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 100,
+          "size": 16,
+          "end": 116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 116,
+          "size": 5296,
+          "end": 5412
+        }
+      ],
+      "member_count": 9,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/opening.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/opening.narc",
+      "parent_file_id": 296,
+      "rom_offset": 32889344,
+      "size": 27580,
+      "sha256": "a7f697f95321dcfb2e9c8f155daa0b032932c42215a627e0e2397cd455c61d20",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 27580,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 180,
+          "end": 196
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 196,
+          "size": 16,
+          "end": 212
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 212,
+          "size": 27368,
+          "end": 27580
+        }
+      ],
+      "member_count": 21,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/plist_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/plist_gra.narc",
+      "parent_file_id": 297,
+      "rom_offset": 32916992,
+      "size": 40108,
+      "sha256": "afc98cdfaa34fe70ebc99f219682c3ce989b648ad91fcfcfb42bfd81294f4cf5",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 40108,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 204,
+          "end": 220
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 220,
+          "size": 16,
+          "end": 236
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 236,
+          "size": 39872,
+          "end": 40108
+        }
+      ],
+      "member_count": 24,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/pmsi.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/pmsi.narc",
+      "parent_file_id": 298,
+      "rom_offset": 32957440,
+      "size": 12644,
+      "sha256": "0654fe9ef26ab42e224dc0992aa02776834522c7902edb7fe4ef1a0db5db7a5e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 12644,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 220,
+          "end": 236
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 236,
+          "size": 16,
+          "end": 252
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 252,
+          "size": 12392,
+          "end": 12644
+        }
+      ],
+      "member_count": 26,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/poketch.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/poketch.narc",
+      "parent_file_id": 299,
+      "rom_offset": 32970240,
+      "size": 58820,
+      "sha256": "5235827d35c2f6c3ddbf6f8efcf809b56d545d3e902091d4a4c6cbd7640cb1db",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 58820,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1020,
+          "end": 1036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1036,
+          "size": 16,
+          "end": 1052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1052,
+          "size": 57768,
+          "end": 58820
+        }
+      ],
+      "member_count": 126,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/poru_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/poru_gra.narc",
+      "parent_file_id": 300,
+      "rom_offset": 33029120,
+      "size": 27108,
+      "sha256": "9b60ede5071fed56136a5fcd31e062f0ed0fa58f3d02e0471664ea8400c8371f",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 27108,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 108,
+          "end": 124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 124,
+          "size": 16,
+          "end": 140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 140,
+          "size": 26968,
+          "end": 27108
+        }
+      ],
+      "member_count": 12,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/poruact.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/poruact.narc",
+      "parent_file_id": 301,
+      "rom_offset": 33056256,
+      "size": 5292,
+      "sha256": "3690bbdc63e30a2ed1a8b7082593f0aab37c1ee3bab29c415612ef9424b356b8",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 5292,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 268,
+          "end": 284
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 284,
+          "size": 16,
+          "end": 300
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 300,
+          "size": 4992,
+          "end": 5292
+        }
+      ],
+      "member_count": 32,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/porudemo.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/porudemo.narc",
+      "parent_file_id": 302,
+      "rom_offset": 33061888,
+      "size": 8812,
+      "sha256": "2a62543af8b1f73ecca4a902b1e7d384c4785dc865923d0a08ae00c013f01d65",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 8812,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 60,
+          "end": 76
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 76,
+          "size": 16,
+          "end": 92
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 92,
+          "size": 8720,
+          "end": 8812
+        }
+      ],
+      "member_count": 6,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/pst_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/pst_gra.narc",
+      "parent_file_id": 303,
+      "rom_offset": 33071104,
+      "size": 127152,
+      "sha256": "450b0dfde96b5a34b7b0634a994615203b6c5a2e7f616d12b451fe98ea6226a0",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 127152,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1108,
+          "end": 1124
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1124,
+          "size": 16,
+          "end": 1140
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1140,
+          "size": 126012,
+          "end": 127152
+        }
+      ],
+      "member_count": 137,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/ranking.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/ranking.narc",
+      "parent_file_id": 304,
+      "rom_offset": 33198592,
+      "size": 5320,
+      "sha256": "41edac6df8e779a1fa6dbab5e60856b931050533f461cd6765ee5cdb5bc43aae",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 5320,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 44,
+          "end": 60
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 60,
+          "size": 16,
+          "end": 76
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 76,
+          "size": 5244,
+          "end": 5320
+        }
+      ],
+      "member_count": 4,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/record.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/record.narc",
+      "parent_file_id": 305,
+      "rom_offset": 33204224,
+      "size": 22980,
+      "sha256": "b7b8f40a3f42e4cfa4ca895d0614a27c47b2264e3cd9cff60687de6c524999fd",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 22980,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 132,
+          "end": 148
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 148,
+          "size": 16,
+          "end": 164
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 164,
+          "size": 22816,
+          "end": 22980
+        }
+      ],
+      "member_count": 15,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/shop_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/shop_gra.narc",
+      "parent_file_id": 306,
+      "rom_offset": 33227264,
+      "size": 10048,
+      "sha256": "50e3c3b71806810a03494973501b2ab36184b77d5397d6ecb3616e33eccaa693",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 10048,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 100,
+          "end": 116
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 116,
+          "size": 16,
+          "end": 132
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 132,
+          "size": 9916,
+          "end": 10048
+        }
+      ],
+      "member_count": 11,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/tmap_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/tmap_gra.narc",
+      "parent_file_id": 307,
+      "rom_offset": 33237504,
+      "size": 85776,
+      "sha256": "9c53a93615844943d312d01aa6c5736f07cb3d8bd29c07a5fbff3bdb7b93d374",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 85776,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 252,
+          "end": 268
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 268,
+          "size": 16,
+          "end": 284
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 284,
+          "size": 85492,
+          "end": 85776
+        }
+      ],
+      "member_count": 30,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/touch_subwindow.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/touch_subwindow.narc",
+      "parent_file_id": 308,
+      "rom_offset": 33323520,
+      "size": 2456,
+      "sha256": "1b0cb1819a86dfb284d380a999820c303523ccb4523dd6c040886064d36d7c57",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 2456,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 92,
+          "end": 108
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 108,
+          "size": 16,
+          "end": 124
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 124,
+          "size": 2332,
+          "end": 2456
+        }
+      ],
+      "member_count": 10,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/trainer_case.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/trainer_case.narc",
+      "parent_file_id": 309,
+      "rom_offset": 33326080,
+      "size": 228320,
+      "sha256": "009131c495f817defdd9b5639ba113c89efda62951d5a36f5f2c6ef8d96f1a2b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 228320,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 484,
+          "end": 500
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 500,
+          "size": 16,
+          "end": 516
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 516,
+          "size": 227804,
+          "end": 228320
+        }
+      ],
+      "member_count": 59,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/unionroom.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/unionroom.narc",
+      "parent_file_id": 310,
+      "rom_offset": 33554432,
+      "size": 4624,
+      "sha256": "18af9494db8ab737185c930bb3ffa6db52b3b11a643108bc1eae48305ad24428",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 4624,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 4516,
+          "end": 4624
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/waza_oshie_gra.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/waza_oshie_gra.narc",
+      "parent_file_id": 311,
+      "rom_offset": 33559552,
+      "size": 12084,
+      "sha256": "6fca079a9b8ac505a6825bf703423bba492e14eac7c292f181c702761c572dd1",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 12084,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 116,
+          "end": 132
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 132,
+          "size": 16,
+          "end": 148
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 148,
+          "size": 11936,
+          "end": 12084
+        }
+      ],
+      "member_count": 13,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/winframe.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/winframe.narc",
+      "parent_file_id": 312,
+      "rom_offset": 33571840,
+      "size": 35044,
+      "sha256": "656ad458e1a40d6f30adcfa01f958ab01b205721e28ce804833f3cc5c95dfede",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 35044,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 412,
+          "end": 428
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 428,
+          "size": 16,
+          "end": 444
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 444,
+          "size": 34600,
+          "end": 35044
+        }
+      ],
+      "member_count": 50,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/graphic/worldtrade.narc",
+      "depth": 0,
+      "parent_narc_path": "/graphic/worldtrade.narc",
+      "parent_file_id": 313,
+      "rom_offset": 33607168,
+      "size": 46808,
+      "sha256": "c58d7070ae9e30d4c0ff7da0aab73b715755ae46adf3cfc3fe1b2e4d23b20981",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 46808,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 316,
+          "end": 332
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 332,
+          "size": 16,
+          "end": 348
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 348,
+          "size": 46460,
+          "end": 46808
+        }
+      ],
+      "member_count": 38,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/itemtool/itemdata/item_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/itemtool/itemdata/item_data.narc",
+      "parent_file_id": 314,
+      "rom_offset": 33654272,
+      "size": 19500,
+      "sha256": "a6cfe6df97f24b191d782fe0ab14a9c067a9b496afd12180b4904f56e8740c7e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 19500,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 3548,
+          "end": 3564
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 3564,
+          "size": 16,
+          "end": 3580
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 3580,
+          "size": 15920,
+          "end": 19500
+        }
+      ],
+      "member_count": 442,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/itemtool/itemdata/item_icon.narc",
+      "depth": 0,
+      "parent_narc_path": "/itemtool/itemdata/item_icon.narc",
+      "parent_file_id": 315,
+      "rom_offset": 33674240,
+      "size": 395440,
+      "sha256": "20dcd51401a18b37ef01ab62c8eb8307c6cd6a6d9c5ef6722fd6d4ba92d20b01",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 395440,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 5636,
+          "end": 5652
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 5652,
+          "size": 16,
+          "end": 5668
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 5668,
+          "size": 389772,
+          "end": 395440
+        }
+      ],
+      "member_count": 703,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/itemtool/itemdata/nuts_data.narc",
+      "depth": 0,
+      "parent_narc_path": "/itemtool/itemdata/nuts_data.narc",
+      "parent_file_id": 316,
+      "rom_offset": 34070016,
+      "size": 1332,
+      "sha256": "671d1d33478a40e89f5d9811827649b880666321bf7dfe83b4c7be4fce69c97e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1332,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 524,
+          "end": 540
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 540,
+          "size": 16,
+          "end": 556
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 556,
+          "size": 776,
+          "end": 1332
+        }
+      ],
+      "member_count": 64,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/msgdata/msg.narc",
+      "depth": 0,
+      "parent_narc_path": "/msgdata/msg.narc",
+      "parent_file_id": 317,
+      "rom_offset": 13349376,
+      "size": 2695184,
+      "sha256": "f291040fa010137cabb12a5661e9cece845a460788dae94fbe740e04aa98fd06",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 2695184,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 5004,
+          "end": 5020
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 5020,
+          "size": 16,
+          "end": 5036
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 5036,
+          "size": 2690148,
+          "end": 2695184
+        }
+      ],
+      "member_count": 624,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/msgdata/scenario/scr_msg.narc",
+      "depth": 0,
+      "parent_narc_path": "/msgdata/scenario/scr_msg.narc",
+      "parent_file_id": 318,
+      "rom_offset": 16045056,
+      "size": 6748,
+      "sha256": "89e84ab4475c85ad4358761c89c69c16f51c024041d2081a1da6ad1ad51b7cba",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 6748,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 140,
+          "end": 156
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 156,
+          "size": 16,
+          "end": 172
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 172,
+          "size": 6576,
+          "end": 6748
+        }
+      ],
+      "member_count": 16,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/particledata/particledata.narc",
+      "depth": 0,
+      "parent_narc_path": "/particledata/particledata.narc",
+      "parent_file_id": 319,
+      "rom_offset": 58344448,
+      "size": 34300,
+      "sha256": "eea55fb469d825b97c734b7ccc537f9c774fd54da70668fda418cf4ac2482ea6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 34300,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 60,
+          "end": 76
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 76,
+          "size": 16,
+          "end": 92
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 92,
+          "size": 34208,
+          "end": 34300
+        }
+      ],
+      "member_count": 6,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/pokeanime/poke_anm.narc",
+      "depth": 0,
+      "parent_narc_path": "/pokeanime/poke_anm.narc",
+      "parent_file_id": 320,
+      "rom_offset": 58869248,
+      "size": 25412,
+      "sha256": "32606834ed99b654238499e3b42610d984b61c2cf3f67368f091ccf58e9af217",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 25412,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1084,
+          "end": 1100
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1100,
+          "size": 16,
+          "end": 1116
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1116,
+          "size": 24296,
+          "end": 25412
+        }
+      ],
+      "member_count": 134,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokezukan.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokezukan.narc",
+      "parent_file_id": 321,
+      "rom_offset": 59100672,
+      "size": 1048,
+      "sha256": "a8072ca83eccb60cc3d94b0c7be53807e9d39e0895bc82551fd168db54eea381",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1048,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 996,
+          "end": 1048
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/shinzukan.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/shinzukan.narc",
+      "parent_file_id": 322,
+      "rom_offset": 59102208,
+      "size": 364,
+      "sha256": "86c2c31f90a1fe9d8ddf7f38187ce9e62c84c7e2aef720ee30b61aeae3871de6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 364,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 312,
+          "end": 364
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/icongra/poke_icon.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/icongra/poke_icon.narc",
+      "parent_file_id": 323,
+      "rom_offset": 34071552,
+      "size": 577776,
+      "sha256": "3463c546c112f928f2f8e82ee1638b9739d52dea1d72779704ad3cc36cfb6c1b",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 577776,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4332,
+          "end": 4348
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4348,
+          "size": 16,
+          "end": 4364
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4364,
+          "size": 573412,
+          "end": 577776
+        }
+      ],
+      "member_count": 540,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/personal/evo.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/personal/evo.narc",
+      "parent_file_id": 324,
+      "rom_offset": 29470720,
+      "size": 26104,
+      "sha256": "38bd9dd28f32827246299ed922e05ffd3905c2c445a059b9fd7ec3b56213f5de",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 26104,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4020,
+          "end": 4036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4036,
+          "size": 16,
+          "end": 4052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4052,
+          "size": 22052,
+          "end": 26104
+        }
+      ],
+      "member_count": 501,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/personal/growtbl.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/personal/growtbl.narc",
+      "parent_file_id": 325,
+      "rom_offset": 29496832,
+      "size": 3348,
+      "sha256": "ce5c612e32e537da3cdf7808c3f21ab217e83a75ead56027d98a7d84bb1b55d6",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 3348,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 3240,
+          "end": 3348
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/personal/personal.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/personal/personal.narc",
+      "parent_file_id": 326,
+      "rom_offset": 29444608,
+      "size": 26104,
+      "sha256": "9bc883e846af6cc0810251c8ce05663ceadacac0f47dd83a24a93fa0cea75392",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 26104,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4020,
+          "end": 4036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4036,
+          "size": 16,
+          "end": 4052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4052,
+          "size": 22052,
+          "end": 26104
+        }
+      ],
+      "member_count": 501,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/personal/wotbl.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/personal/wotbl.narc",
+      "parent_file_id": 328,
+      "rom_offset": 29501440,
+      "size": 18752,
+      "sha256": "b46d62d1fd781e66a7bda535e3a1c1ab1af2b5aa72778d183c65411b344937d0",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 18752,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4020,
+          "end": 4036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4036,
+          "size": 16,
+          "end": 4052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4052,
+          "size": 14700,
+          "end": 18752
+        }
+      ],
+      "member_count": 501,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokeanm/pokeanm.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokeanm/pokeanm.narc",
+      "parent_file_id": 329,
+      "rom_offset": 59102720,
+      "size": 13892,
+      "sha256": "25af2f6e78a5a8eab609313a6e21b103604753686088ef4c51f212c89c109011",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 13892,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 13840,
+          "end": 13892
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokefoot/pokefoot.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokefoot/pokefoot.narc",
+      "parent_file_id": 330,
+      "rom_offset": 34649600,
+      "size": 58604,
+      "sha256": "181e87eb2bf79ba6e73124d1f694e801aa48844dcdd85e66c0bd2c707e8f8688",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 58604,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 3988,
+          "end": 4004
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4004,
+          "size": 16,
+          "end": 4020
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4020,
+          "size": 54584,
+          "end": 58604
+        }
+      ],
+      "member_count": 497,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/height.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/height.narc",
+      "parent_file_id": 331,
+      "rom_offset": 16052224,
+      "size": 23108,
+      "sha256": "b44492aa09f74d2cf5f41ca13c2f7fc6d8238258c64ef49f2c23c1ac15dccec3",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 23108,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 15820,
+          "end": 15836
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 15836,
+          "size": 16,
+          "end": 15852
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 15852,
+          "size": 7256,
+          "end": 23108
+        }
+      ],
+      "member_count": 1976,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/height_o.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/height_o.narc",
+      "parent_file_id": 332,
+      "rom_offset": 16075776,
+      "size": 1684,
+      "sha256": "8dcef49c4815fdd7662b78ad140858fa23fba5971fae866cb6581f3cb0c8f6bd",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1684,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1100,
+          "end": 1116
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1116,
+          "size": 16,
+          "end": 1132
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1132,
+          "size": 552,
+          "end": 1684
+        }
+      ],
+      "member_count": 136,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/otherpoke.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/otherpoke.narc",
+      "parent_file_id": 333,
+      "rom_offset": 16077824,
+      "size": 890604,
+      "sha256": "cab7af2e4fef1878af6a7002eecc24c7a1c879166aaf5dfd61ebdc0bd4b92681",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 890604,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1716,
+          "end": 1732
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1732,
+          "size": 16,
+          "end": 1748
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1748,
+          "size": 888856,
+          "end": 890604
+        }
+      ],
+      "member_count": 213,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/poke_shadow.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/poke_shadow.narc",
+      "parent_file_id": 334,
+      "rom_offset": 16968704,
+      "size": 556,
+      "sha256": "037338ffc4f027a249f506b8171dc872c875477158f019e4ea503d1ade6255ec",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 556,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 504,
+          "end": 556
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/poke_shadow_ofx.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/poke_shadow_ofx.narc",
+      "parent_file_id": 335,
+      "rom_offset": 16969728,
+      "size": 556,
+      "sha256": "0e145a476fc5d98620d37f98322efbf812cf597d4b0675beaf87846d3a643885",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 556,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 504,
+          "end": 556
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/poke_yofs.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/poke_yofs.narc",
+      "parent_file_id": 336,
+      "rom_offset": 16970752,
+      "size": 556,
+      "sha256": "a5984361e6e9167321a9b4f5ce444a3b628d36520e97e8d9c61c1477ff157969",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 556,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 504,
+          "end": 556
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/pokegra/pokegra.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/pokegra/pokegra.narc",
+      "parent_file_id": 337,
+      "rom_offset": 16971776,
+      "size": 11778676,
+      "sha256": "3320b89c6c84341784f58f9632dbe93b44ee34e0fe16d3a6b8673aed70a9adc2",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 11778676,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 23724,
+          "end": 23740
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 23740,
+          "size": 16,
+          "end": 23756
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 23756,
+          "size": 11754920,
+          "end": 11778676
+        }
+      ],
+      "member_count": 2964,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trainer/trdata.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trainer/trdata.narc",
+      "parent_file_id": 338,
+      "rom_offset": 29520384,
+      "size": 23852,
+      "sha256": "b459fec85eba6036f328eba6853b85cfe1104c941004052f5ffa7c93d8d472e3",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 23852,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 6812,
+          "end": 6828
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 6828,
+          "size": 16,
+          "end": 6844
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 6844,
+          "size": 17008,
+          "end": 23852
+        }
+      ],
+      "member_count": 850,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trainer/trpoke.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trainer/trpoke.narc",
+      "parent_file_id": 339,
+      "rom_offset": 29544448,
+      "size": 21908,
+      "sha256": "612c5d48f937aff12898af92a2e3d37840851d39e289ea7245c4d19b2dfb0a1e",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 21908,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 6812,
+          "end": 6828
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 6828,
+          "size": 16,
+          "end": 6844
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 6844,
+          "size": 15064,
+          "end": 21908
+        }
+      ],
+      "member_count": 850,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trgra/trbgra.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trgra/trbgra.narc",
+      "parent_file_id": 340,
+      "rom_offset": 28750848,
+      "size": 52340,
+      "sha256": "4cdaa08b37d980ca81cf475f148ccea36f71c19cece2c581b015f2164053814a",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 52340,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 140,
+          "end": 156
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 156,
+          "size": 16,
+          "end": 172
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 172,
+          "size": 52168,
+          "end": 52340
+        }
+      ],
+      "member_count": 16,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trgra/trfgra.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trgra/trfgra.narc",
+      "parent_file_id": 341,
+      "rom_offset": 28803584,
+      "size": 640580,
+      "sha256": "4e757a733993340e7b903f0fbe533565b20dad1e972932def4ced01428608917",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 640580,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1580,
+          "end": 1596
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1596,
+          "size": 16,
+          "end": 1612
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1612,
+          "size": 638968,
+          "end": 640580
+        }
+      ],
+      "member_count": 196,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trmsg/trtbl.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trmsg/trtbl.narc",
+      "parent_file_id": 342,
+      "rom_offset": 29566464,
+      "size": 9604,
+      "sha256": "b28373dca644706e57bb643c2b1a24182e62935555158b9ae620dcb48bb86663",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 9604,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 9552,
+          "end": 9604
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/trmsg/trtblofs.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/trmsg/trtblofs.narc",
+      "parent_file_id": 343,
+      "rom_offset": 29576192,
+      "size": 1760,
+      "sha256": "c473b9eb2e8ebb2761e8f737bde3a871eb6f0b9a2a5116f1dce3c9a10836f76a",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 1760,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 20,
+          "end": 36
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 36,
+          "size": 16,
+          "end": 52
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 52,
+          "size": 1708,
+          "end": 1760
+        }
+      ],
+      "member_count": 1,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/poketool/waza/waza_tbl.narc",
+      "depth": 0,
+      "parent_narc_path": "/poketool/waza/waza_tbl.narc",
+      "parent_file_id": 344,
+      "rom_offset": 30857728,
+      "size": 11356,
+      "sha256": "f9f6a37e8b8170558ce14c4be35c890ff59cc97508a4aa237fdac945dfdffe54",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 11356,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 3780,
+          "end": 3796
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 3796,
+          "size": 16,
+          "end": 3812
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 3812,
+          "size": 7544,
+          "end": 11356
+        }
+      ],
+      "member_count": 471,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/resource/eng/trial/trial.narc",
+      "depth": 0,
+      "parent_narc_path": "/resource/eng/trial/trial.narc",
+      "parent_file_id": 345,
+      "rom_offset": 60141568,
+      "size": 56292,
+      "sha256": "28844af1506ffb512ee1949d89fd9c5964db1e43170afc020bdc90fa808d9557",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 56292,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 76,
+          "end": 92
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 92,
+          "size": 16,
+          "end": 108
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 108,
+          "size": 56184,
+          "end": 56292
+        }
+      ],
+      "member_count": 8,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/resource/eng/zukan/zukan.narc",
+      "depth": 0,
+      "parent_narc_path": "/resource/eng/zukan/zukan.narc",
+      "parent_file_id": 346,
+      "rom_offset": 60197888,
+      "size": 72988,
+      "sha256": "6c27d3c79af8a1fda140d730c04afba099dfdb760e1f9e681e1e3dd52b1c5022",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 72988,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 1052,
+          "end": 1068
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 1068,
+          "size": 16,
+          "end": 1084
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 1084,
+          "size": 71904,
+          "end": 72988
+        }
+      ],
+      "member_count": 130,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/we.arc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/we.arc",
+      "parent_file_id": 347,
+      "rom_offset": 30467072,
+      "size": 254028,
+      "sha256": "2ee2183ad04a7b4ba20ef1562e25f335081b7501b42ad50d43846be9583367ff",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 254028,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 4020,
+          "end": 4036
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 4036,
+          "size": 16,
+          "end": 4052
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 4052,
+          "size": 249976,
+          "end": 254028
+        }
+      ],
+      "member_count": 501,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/we_sub.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/we_sub.narc",
+      "parent_file_id": 348,
+      "rom_offset": 30721536,
+      "size": 12324,
+      "sha256": "d4314b2b2a3cfec4b4cac16713e80a20400ea1b03a1e6ce87320174ce6b1f2f9",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 12324,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 412,
+          "end": 428
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 428,
+          "size": 16,
+          "end": 444
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 444,
+          "size": 11880,
+          "end": 12324
+        }
+      ],
+      "member_count": 50,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectclact/wecell.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectclact/wecell.narc",
+      "parent_file_id": 349,
+      "rom_offset": 30809088,
+      "size": 5364,
+      "sha256": "cef63814ccdb2063e385d88366d4e610061958723b7b0131c7da3f2163749648",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 5364,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 308,
+          "end": 324
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 324,
+          "size": 16,
+          "end": 340
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 340,
+          "size": 5024,
+          "end": 5364
+        }
+      ],
+      "member_count": 37,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectclact/wecellanm.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectclact/wecellanm.narc",
+      "parent_file_id": 350,
+      "rom_offset": 30814720,
+      "size": 4688,
+      "sha256": "0e47c9b5f7c24199bd56d0576f276dabbf4c1d8aa68922caa3ac4ec2699d0865",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 4688,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 308,
+          "end": 324
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 324,
+          "size": 16,
+          "end": 340
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 340,
+          "size": 4348,
+          "end": 4688
+        }
+      ],
+      "member_count": 37,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectclact/wechar.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectclact/wechar.narc",
+      "parent_file_id": 351,
+      "rom_offset": 30819840,
+      "size": 33076,
+      "sha256": "e6902f8f1eb1b63f9d3f23caf2e6eee4f981f6773a118324d8fff6a9559e5d68",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 33076,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 308,
+          "end": 324
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 324,
+          "size": 16,
+          "end": 340
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 340,
+          "size": 32736,
+          "end": 33076
+        }
+      ],
+      "member_count": 37,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectclact/wepltt.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectclact/wepltt.narc",
+      "parent_file_id": 352,
+      "rom_offset": 30853120,
+      "size": 4480,
+      "sha256": "31f3222bb317406d558a130bcfbff12cf49f76e05dd9f89cda8ef4e319a4a4d2",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 4480,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 324,
+          "end": 340
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 340,
+          "size": 16,
+          "end": 356
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 356,
+          "size": 4124,
+          "end": 4480
+        }
+      ],
+      "member_count": 39,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectdata/ball_particle.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectdata/ball_particle.narc",
+      "parent_file_id": 353,
+      "rom_offset": 36037120,
+      "size": 321604,
+      "sha256": "3e87820eea3920c98231f806d166f315f339df9ff9c834c8e5640bb87ffbdd01",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 321604,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 948,
+          "end": 964
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 964,
+          "size": 16,
+          "end": 980
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 980,
+          "size": 320624,
+          "end": 321604
+        }
+      ],
+      "member_count": 117,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/effectdata/waza_particle.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/effectdata/waza_particle.narc",
+      "parent_file_id": 354,
+      "rom_offset": 36359168,
+      "size": 2381840,
+      "sha256": "d5ae0e67ce103dfb89f1e34510402789633d02c28c474fd3c1fd0f06b1c45681",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 2381840,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 3892,
+          "end": 3908
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 3908,
+          "size": 16,
+          "end": 3924
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 3924,
+          "size": 2377916,
+          "end": 2381840
+        }
+      ],
+      "member_count": 485,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    },
+    {
+      "container_chain": "/wazaeffect/pt_debug/debug_particle.narc",
+      "depth": 0,
+      "parent_narc_path": "/wazaeffect/pt_debug/debug_particle.narc",
+      "parent_file_id": 355,
+      "rom_offset": 38741504,
+      "size": 3016,
+      "sha256": "15b42228db722e499f072c1fac5f57aa71c388e9aaae1502af2fbcc0d13f8f78",
+      "bom": "0xfffe",
+      "version": "0x0100",
+      "declared_file_size": 3016,
+      "header_size": 16,
+      "block_count": 3,
+      "blocks": [
+        {
+          "index": 0,
+          "magic": "BTAF",
+          "offset": 16,
+          "size": 28,
+          "end": 44
+        },
+        {
+          "index": 1,
+          "magic": "BTNF",
+          "offset": 44,
+          "size": 16,
+          "end": 60
+        },
+        {
+          "index": 2,
+          "magic": "GMIF",
+          "offset": 60,
+          "size": 2956,
+          "end": 3016
+        }
+      ],
+      "member_count": 2,
+      "named_member_count": 0,
+      "btnf_issues": [],
+      "validation": "valid"
+    }
+  ],
+  "malformed": [],
+  "member_records": {
+    "count": 33953,
+    "complete_csv_shards": [
+      "members/narc-members-0000.csv",
+      "members/narc-members-0001.csv",
+      "members/narc-members-0002.csv",
+      "members/narc-members-0003.csv",
+      "members/narc-members-0004.csv",
+      "members/narc-members-0005.csv",
+      "members/narc-members-0006.csv",
+      "members/narc-members-0007.csv",
+      "members/narc-members-0008.csv",
+      "members/narc-members-0009.csv",
+      "members/narc-members-0010.csv",
+      "members/narc-members-0011.csv",
+      "members/narc-members-0012.csv",
+      "members/narc-members-0013.csv",
+      "members/narc-members-0014.csv",
+      "members/narc-members-0015.csv",
+      "members/narc-members-0016.csv"
+    ],
+    "rows_per_shard": 2000,
+    "note": "The ordered CSV shards contain one complete record per member; raw payload bytes are not retained."
+  }
+}
