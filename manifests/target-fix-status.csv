@@ -1,0 +1,2 @@
+id,target,state,evidence,patch
+G4-UI-003,ADAE Rev 5,fixed_local,HM05 palette 358->350 verified in ARM9 item archive table,patches/hm05_defog_palette.py
