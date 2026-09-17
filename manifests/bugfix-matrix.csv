@@ -1,0 +1,87 @@
+id,name,affected_scope,region_language,status,defect_class
+G4-BAT-001,U-turn flinch-item oversight,D/P/Pt/HG/SS,all,confirmed_public,game_logic
+G4-BAT-002,Fire Fang Wonder Guard glitch,D/P/Pt/HG/SS,all,confirmed_public,game_logic
+G4-BAT-003,Invisible status condition glitch,D/P/Pt/HG/SS,all,confirmed_public,display_state
+G4-BAT-004,Pressure switch PP glitch,D/P/Pt/HG/SS,all,confirmed_public,state_restoration
+G4-BAT-005,Rage glitch,D/P/Pt/HG/SS,all,confirmed_public,volatile_state
+G4-BAT-006,Sprite translation glitch,D/P/Pt/HG/SS,all,research_required,animation_state
+G4-BAT-007,Transform glitch family,D/P/Pt/HG/SS,varies,confirmed_public,transform_state
+G4-BAT-008,Arceus Plate battle freeze,D/P,all,confirmed_public,form_change
+G4-BAT-009,Protection bypass glitch,D/P,all,confirmed_public,accuracy_logic
+G4-BAT-010,First Starly battle crash,D/P,all,confirmed_public,script_battle_guard
+G4-BAT-011,Tower Tycoon event skipping,D/P,all,confirmed_public,facility_state
+G4-BAT-012,U-turn Choice glitch,D/P,all,confirmed_public,choice_lock
+G4-BAT-013,Pursuit Choice glitch,D/P,Japanese,region_specific,choice_lock
+G4-BAT-014,Slow Start removal oversight,D/P,Japanese,region_specific,ability_state
+G4-BAT-015,Trapping Ability flee-message glitch,Pt; D/P applicability unknown,all,research_required,battle_targeting
+G4-BAT-016,Double Shiny encounter softlock,D/P/Pt,all,confirmed_public,battle_intro
+G4-BAT-017,Ace Trainer Kate oversight,HG/SS,all,confirmed_public,trainer_sight
+G4-BAT-018,Acid rain / acid weather,Pt/HG/SS; D/P when hosted by affected game,all,confirmed_public,weather_state
+G4-BAT-019,Battle Tower streak overflow,Pt/HG/SS,all,confirmed_public,integer_wrap
+G4-SYS-001,Corrupted-save cloning behavior,D/P/Pt/HG/SS,all,confirmed_public,save_transaction
+G4-NET-001,DNS Mystery Gift / alternate-server behavior,D/P/Pt/HG/SS,all,assessment_required,external_protocol
+G4-NET-002,GTS morphing glitch,D/P/Pt/HG/SS,all,research_required,server_client_state
+G4-NET-003,GTS trade-evolution oversight,D/P/Pt/HG/SS,all,confirmed_public,trade_state
+G4-NET-004,GTS vanishing glitch,D/P/Pt/HG/SS,all,research_required,server_client_state
+G4-MIG-001,Pal Park name encoding glitch,D/P/Pt/HG/SS,Western,region_specific,text_encoding
+G4-SYS-002,Pomeg glitch interactions,D/P/Pt/HG/SS,all,assessment_required,legacy_state
+G4-NET-005,Trade cloning,D/P/Pt/HG/SS,all,confirmed_public,transaction_atomicity
+G4-OW-001,Tweaking / load-boundary exploit,D/P/Pt/HG/SS listed; verify per target,all,assessment_required,map_streaming
+G4-UI-001,Egg determination glitch,D/P,all,confirmed_public,ui_race
+G4-SYS-003,Friendship underflow,D/P,all,confirmed_public,integer_underflow
+G4-NET-006,GTS cloning,D/P,all,confirmed_public,transaction_atomicity
+G4-DATA-001,Ribbon check skips after Egg,D/P,all,confirmed_public,iteration_logic
+G4-UI-002,GTS level-range display oversight,Pt,early American,region_specific,localization_ui
+G4-TEXT-001,Member Card name error,Pt,localization-dependent,assessment_required,text_data
+G4-SAVE-002,Disappearing PC Pokémon report,D/P/Pt,all,research_required,unknown
+G4-UI-003,HM05 Defog shown as Water type,D/P/Pt,all,confirmed_public,ui_data
+G4-BAT-020,Run Away wrong escape message,D/P/Pt,all,confirmed_public,message_subject
+G4-EVT-001,Buena password lockout,HG/SS,all,research_required,event_state
+G4-ENC-001,Pokémon Lullaby underflow,HG/SS,all,confirmed_public,integer_underflow
+G4-PW-001,Pokéwalker data cloning / rejection,HG/SS,all,research_required,save_sync
+G4-FORM-001,Giratina form/stat desynchronization,Pt/HG/SS,all,confirmed_public,form_stats
+G4-OW-002,Overworld graphics corruption,D/P/Pt/HG/SS,all,confirmed_public,rendering
+G4-OW-003,Intro cutscene map/content mismatch,D/P/Pt/HG/SS,all,assessment_required,content_consistency
+G4-OW-004,Waterfall facing-direction oversight,D/P/Pt/HG/SS,all,confirmed_public,movement_state
+G4-OW-005,Barry Underground overlap,D/P,all,confirmed_public,npc_spawn
+G4-OW-006,Barry rematch weekday persistence,D/P,all,confirmed_public,event_refresh
+G4-OW-007,Broken escalator / wall trap,D/P,early Japanese,region_specific,warp_coordinates
+G4-OW-008,Dress-up Hiker movement glitch,D/P,all,confirmed_public,input_script_race
+G4-OW-009,Pal Park Retire glitch,D/P,all,confirmed_public,state_machine
+G4-UI-004,Poké Mart text glitch,D/P,all,confirmed_public,ui_state
+G4-AUD-001,Turnback Cave music instrument glitch,D/P,all,confirmed_public,audio_state
+G4-AUD-002,Silent Route 214,D/P,all,confirmed_public,audio_state
+G4-OW-010,Surf glitch / wall escape,D/P,early Japanese primarily,region_specific,collision_warp
+G4-GFX-001,Battle Frontier transition pixel leak,Pt,all,confirmed_public,rendering
+G4-DBG-001,Battle Tower B-button debug warp,Pt,all,confirmed_public,debug_leftover
+G4-TEXT-002,Black Belt Eddie speech layout error,Pt,possibly English,research_required,localization_text
+G4-PERF-001,Full-party framerate degradation,Pt,all,confirmed_public,performance
+G4-OW-011,Route 227 resurfacing clipping,Pt,all,confirmed_public,warp_coordinates
+G4-OW-012,Cheryl/NPC overlap,D/P/Pt,all,confirmed_public,npc_collision
+G4-OW-013,Explorer Kit unusable-tile oversights,D/P/Pt,all,research_required,tile_behavior
+G4-OW-014,Soft-Boiled/Milk Drink target race,D/P/Pt; HG/SS unknown,all,research_required,input_race
+G4-MIG-002,Pal Park date manipulation,D/P/Pt,all,assessment_required,clock_policy
+G4-NET-007,Underground goods/trap duplication,D/P/Pt,all,confirmed_public,transaction_atomicity
+G4-ENC-002,Sticky Hold/Suction Cups field effect missing,D/P/Pt,all,confirmed_public,ability_field_effect
+G4-OW-015,Additional boulder water behavior,HG/SS,Japanese,region_specific,tile_behavior
+G4-FOLLOW-001,Cianwood Gym follower tier glitch,HG/SS,all,confirmed_public,follower_position
+G4-FOLLOW-002,Floating walking Pokémon,HG/SS,all,confirmed_public,animation_state
+G4-AUD-003,GB Sounds muting,HG/SS,all,confirmed_public,audio_state
+G4-EVT-002,Haircut brothers clock-state glitch,HG/SS,all,confirmed_public,rtc_state
+G4-OW-016,Indigo Plateau guard state glitch,HG/SS,all,confirmed_public,npc_state
+G4-MAP-001,Invisible grass tiles,HG/SS,all,confirmed_public,map_data
+G4-GFX-002,Ecruteak Gym sprite corruption,HG/SS,all,confirmed_public,rendering
+G4-GFX-003,Poké Mart sign placement glitch,HG/SS,all,research_required,rendering
+G4-MAP-002,Dark Cave rock behaves as water,HG/SS,all,confirmed_public,map_data
+G4-FOLLOW-003,Walking Pokémon vertical drift,HG/SS,all,confirmed_public,animation_state
+G4-NET-008,Wi-Fi Plaza player merge,Pt/HG/SS,all,confirmed_public,network_avatar_state
+G4-AUDIT-001,Arithmetic underflow/overflow sweep,D/P/Pt/HG/SS,all,discovery_track,static_dynamic_analysis
+G4-AUDIT-002,Array/index/bounds sweep,D/P/Pt/HG/SS,all,discovery_track,static_dynamic_analysis
+G4-AUDIT-003,Save transaction and corruption sweep,D/P/Pt/HG/SS,all,discovery_track,fault_injection
+G4-AUDIT-004,Map collision/warp/tile sweep,D/P/Pt/HG/SS,all,discovery_track,data_validation
+G4-AUDIT-005,Battle state-machine differential sweep,D/P/Pt/HG/SS,all,discovery_track,differential_testing
+G4-AUDIT-006,Localization/text/encoding sweep,D/P/Pt/HG/SS,all regions/languages,discovery_track,data_validation
+G4-AUDIT-007,Graphics/audio state reset sweep,D/P/Pt/HG/SS,all,discovery_track,state_machine
+G4-AUDIT-008,Wireless/GTS/Wi-Fi transaction sweep,D/P/Pt/HG/SS,all,discovery_track,protocol_fault_injection
+G4-AUDIT-009,Unused/debug/development-path safety sweep,D/P/Pt/HG/SS,all,discovery_track,static_analysis
+G4-AUDIT-010,Cross-revision/region fix backport sweep,D/P/Pt/HG/SS,all revisions,discovery_track,binary_diff
