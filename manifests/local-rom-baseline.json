@@ -1,0 +1,14 @@
+{
+  "input_name": "Pokemon_Diamond_USA_NDS-LGC.nds",
+  "title": "POKEMON D",
+  "game_code": "ADAE",
+  "rom_version": 5,
+  "size": 67108864,
+  "crc32": "84427823",
+  "sha256": "e29bc6ebe431d7a6b238267b6b1521fec4a3bc14f2fa348798062f870c738454",
+  "arm9_sha256": "84e3e31273e8b64fd49662d74982c7d28120c9702f436dd212511632d88828b0",
+  "arm7_sha256": "14fa162bf7cddc98f2db04d927cdeca54ea54c9821b23f9cd8ce2b6cbabbe626",
+  "fat_file_count": 356,
+  "arm9_overlay_count": 87,
+  "arm7_overlay_count": 0
+}
